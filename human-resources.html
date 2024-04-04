@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>jasomder</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <style>
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrapper:after {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        .wrapper img {
+            width: auto;
+            height: 100%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+
+
+        /*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+        #intro {
+            width: 100%;
+            position: relative;
+            background: url("assets/images/intro-bg.png") center bottom no-repeat;
+            background-size: cover;
+            padding: 200px 0 120px 0;
+        }
+
+        #intro .intro-img {
+            width: 50%;
+            float: right;
+        }
+
+        #intro .intro-info {
+            width: 50%;
+            float: left;
+        }
+
+        #intro .intro-info h2 {
+            color: #fff;
+            margin-bottom: 40px;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        #intro .intro-info h2 span {
+            color: #74b5fc;
+            text-decoration: underline;
+        }
+
+        #intro .intro-info .btn-get-started,
+        #intro .intro-info .btn-services {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 32px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 0 20px 20px 0;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-get-started {
+            background: #007bff;
+            border: 2px solid #007bff;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-get-started:hover {
+            background: none;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-services {
+            border: 2px solid #fff;
+        }
+
+        #intro .intro-info .btn-services:hover {
+            background: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+
+
+        /*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+
+        @media (max-width: 991px) {
+
+            #intro {
+                padding: 140px 0 60px 0;
+            }
+
+            #intro .intro-img {
+                width: 80%;
+                float: none;
+                margin: 0 auto 25px auto;
+            }
+
+            #intro .intro-info {
+                width: 80%;
+                float: none;
+                margin: auto;
+                text-align: center;
+            }
+
+        }
+
+        /* @media (max-width: 768px) {
+            .back-to-top {
+                bottom: 15px;
+            }
+        } */
+
+        @media (max-width: 767px) {
+            #intro .intro-info {
+                width: 100%;
+            }
+
+            #intro .intro-info h2 {
+                font-size: 34px;
+                margin-bottom: 30px;
+            }
+
+            .section-header p {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 574px) {
+            #intro {
+                padding: 100px 0 20px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <style>
+        .menu-trigger {
+            /* padding-right: 0px !important;
+            margin-right: 0px !important;
+            margin-left: 70px !important; */
+            right: 15px !important;
+        }
+    </style>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">pdıgıtal <em>studıo</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Ana Sayfa</a></li>
+                            <li><a href="services.html">Hizmetlerimiz</a></li>
+                            <!-- <li><a href="menu.html">Menu</a></li> -->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle active" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Kurumsal</a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">Hakkımızda</a>
+                                    <a class="dropdown-item active" href="human-resources.html">İnsan Kaynakları</a>
+                                    <a class="dropdown-item" href="testimonials.html">Referanslarımız</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="section section-bg" id="call-to-action"
+        style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Bizimle <em>Teknolojinin Geleceğine Doğru</em> Yolculuk Al</h2>
+                        <p>Sınır tanımayan; yeni, farklı, zor olanı denemekten korkmayan bir çalışma ortamında kendini
+                            göstermek istemez misin?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-md-8">
+                <h2 class="h2" style="color: #7a7a7a;">Profesyonel Fırsatlar​</h2>
+                <p>Tüm dünyadaki yönetim ekibimizi saatlik stratejik ve taktik destek sunan kariyer
+                    fırsatlarımız bulunmaktadır.</p>
+                <ul class="list-group list-group-horizontal-lg" style="color: #7a7a7a; margin-top: 15px;">
+                    <li class="list-group-item">İdari</li>
+                    <li class="list-group-item">Satışlar</li>
+                    <li class="list-group-item">Bilgi Teknolojisi</li>
+                    <li class="list-group-item">İnsan Kaynakları</li>
+                    <li class="list-group-item">İletişim</li>
+                    <li class="list-group-item">Finans</li>
+                </ul>
+                <a href="./appointment-form.html" type="button" class="btn btn-lg btn-block btn-primary"
+                    style="margin-top: 30px;">Başvurun</a>
+            </div>
+            <div class="col-md-4" style="margin-top:30px;">
+                <img class="img-fluid" src="assets/images/career/it_worker.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h3 class="text-dark" style="padding-bottom:15px; padding-top: 15px;">Ana Değerler</h3>
+        <ul class="row">
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Cüretli</h4>
+                <p>Büyük bahisler yapıyoruz ve yerleşik normlara aykırı olmaktan korkmuyoruz.</p>
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Düşünceli/Dikkatli</h4>
+                <p>Çalışmamızın sonuçlarını etraflıca değerlendirir ve düşüncenin heterojenliğini memnuniyetle
+                    karşılarız.</p>
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Gösterişsiz</h4>
+                <p>"Sıkıcı iş" bizi yıldırmıyor ve en iyi fikirlere sahip olduğumuzu kanıtlamak için motive olmuyoruz.
+                </p>
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Pragmatik ve Etki Odaklı</h4>
+                <p>Gerçek dünyadaki sonuçları ve uygulamaları derinden önemseyen bir inşaacı şirketiyiz.</p>
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Ortak Çalışmaya Dayalı</h4>
+                <p>En büyük ilerlemelerimizin çoğu, birden fazla ekipte yapılan çalışmalardan doğar.</p>
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-1 mb-md-2">
+                <h4 class="text-dark">Büyüme odaklı</h4>
+                <p>Geri bildirimin gücüne inanıyoruz ve sürekli öğrenme ve büyüme zihniyetini teşvik ediyoruz.</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        function locate_to_contact() {
+            location.href = "./contact.html";
+        }
+    </script>
+
+    <div class="container-fluid mx-auto" style="margin-top: 40px;">
+        <div class="row">
+            <div class="line mb-3 mx-auto"></div>
+            <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3">
+                <div class="p-2 flex-fill bd-highlight mb-5 mb-md-0">
+                    <h3>jasomder</h3> <small>Copyright &copy 2021</small>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Ankara</h5>
+                    <p class="mb-0">498 Sokak No:6A Birlik Mahallesi</p>
+                    <p class="mb-0">Çankaya - Ankara</p>
+                    <p class="mb-0">Turkey 06610</p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">İletişim Bilgileri</h5>
+                    <p class="mb-0"><i class="fa fa-phone"></i> +90 506 175 5188</p>
+                    <p class="mb-0"><i class="fa fa-envelope"></i> bilgi@jasomder.org.tr</p>
+                    <!-- <p class="mb-0">Poland</p> -->
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Faydalı Linkler</h5>
+                    <p class="mb-0"><a href="about.html">Hakkımızda</a></p>
+                    <p class="mb-0"><a href="services.html">Hizmetlerimiz</a></p>
+                    <p class="mb-0"><a href="contact.html">İletişim</a></p>
+                    <!-- <p class="mb-0"><a href="blog.html">Blog</a></p> -->
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Özel Linkler</h5>
+                    <p class="mb-0"><a href="privacy-policy.html">Gizlilik Politikası</a></p>
+                    <p class="mb-0"><a href="career.html">Kariyer</a></p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Pharmackt</h5>
+                    <p class="mb-0" style="white-space: pre-line;">jasomder bir <a
+                            href="https://www.pharmackt.com">Pharmackt
+                            şirketidir.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="line mb-3 mx-auto"></div>
+        </div>
+        <div class="row bottom-part">
+            <div class="d-lg-flex justify-content-between bd-highlight col-md-12 mb-5 px-5">
+                <div class="p-2 align-self-center flex-fill bd-highlight">
+                    <div class="fa fa-facebook px-2"></div>
+                    <div class="fa fa-linkedin px-2"></div>
+                    <div class="fa fa-twitter px-2"></div>
+                    <div class="fa fa-instagram px-2"></div>
+                </div>
+                <div class="p-2 row flex-fill bd-highlight justify-content-left">
+                    <div class="p-2 d-flex flex-wrap">
+                        <div class="p-2 flex-fill d-flex bd-highlight">Başarı</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Tecrübe</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Fikir</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Tespit</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">İhtiyaç</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Dijital</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Pragmatik</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">--></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Manifesto</div>
+                    </div>
+                </div>
+                <!-- <div class="p-2 align-self-center flex-fill bd-highlight">
+                    <p> Şu yollarla da ulaşabilirsiniz:</p>
+                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<span id="contact">888-777-666</span></div>
+                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;bilgi@jasomder.org.tr</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>jasomder</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <style>
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrapper:after {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        .wrapper img {
+            width: auto;
+            height: 100%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+
+
+        /*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+        #intro {
+            width: 100%;
+            position: relative;
+            background: url("assets/images/intro-bg.png") center bottom no-repeat;
+            background-size: cover;
+            padding: 200px 0 120px 0;
+        }
+
+        #intro .intro-img {
+            width: 50%;
+            float: right;
+        }
+
+        #intro .intro-info {
+            width: 50%;
+            float: left;
+        }
+
+        #intro .intro-info h2 {
+            color: #fff;
+            margin-bottom: 40px;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        #intro .intro-info h2 span {
+            color: #74b5fc;
+            text-decoration: underline;
+        }
+
+        #intro .intro-info .btn-get-started,
+        #intro .intro-info .btn-services {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 32px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 0 20px 20px 0;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-get-started {
+            background: #007bff;
+            border: 2px solid #007bff;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-get-started:hover {
+            background: none;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        #intro .intro-info .btn-services {
+            border: 2px solid #fff;
+        }
+
+        #intro .intro-info .btn-services:hover {
+            background: #007bff;
+            border-color: #007bff;
+            color: #fff;
+        }
+
+
+        /*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+
+        @media (max-width: 991px) {
+
+            #intro {
+                padding: 140px 0 60px 0;
+            }
+
+            #intro .intro-img {
+                width: 80%;
+                float: none;
+                margin: 0 auto 25px auto;
+            }
+
+            #intro .intro-info {
+                width: 80%;
+                float: none;
+                margin: auto;
+                text-align: center;
+            }
+
+        }
+
+        /* @media (max-width: 768px) {
+            .back-to-top {
+                bottom: 15px;
+            }
+        } */
+
+        @media (max-width: 767px) {
+            #intro .intro-info {
+                width: 100%;
+            }
+
+            #intro .intro-info h2 {
+                font-size: 34px;
+                margin-bottom: 30px;
+            }
+
+            .section-header p {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 574px) {
+            #intro {
+                padding: 100px 0 20px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <style>
+        .menu-trigger {
+            /* padding-right: 0px !important;
+            margin-right: 0px !important;
+            margin-left: 70px !important; */
+            right: 15px !important;
+        }
+    </style>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">pdıgıtal <em>studıo</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Ana Sayfa</a></li>
+                            <li><a href="services.html">Hizmetlerimiz</a></li>
+                            <!-- <li><a href="menu.html">Menu</a></li> -->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle active" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Kurumsal</a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="about.html">Hakkımızda</a>
+                                    <a class="dropdown-item" href="human-resources.html">İnsan Kaynakları</a>
+                                    <a class="dropdown-item" href="testimonials.html">Referanslarımız</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- <section class="section section-bg" id="call-to-action"
+        style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Learn more <em>About Us</em></h2>
+                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro" class="clearfix">
+        <div class="container">
+
+            <div class="intro-img">
+                <img src="assets/images/intro-img.svg" alt="" class="img-fluid">
+            </div>
+
+            <div class="intro-info">
+                <h2>İşletmeniz için<br><span>modern</span><br>çözümler üretiyoruz!</h2>
+                <!-- <div>
+                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                    <a href="#services" class="btn-services scrollto">Our Services</a>
+                </div> -->
+            </div>
+
+        </div>
+    </section><!-- #intro -->
+
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="row" id="tabs">
+                <div class="col-lg-4">
+                    <ul>
+                        <li><a href='#tabs-1'><i class="fa fa-soccer-ball-o"></i>Vizyon Ve Misyonumuz</a></li>
+                        <li><a href='#tabs-2'><i class="fa fa-heart"></i>Değerlerimiz</a></li>
+                        <li><a href='#tabs-3'><i class="fa fa-briefcase"></i> İşimiz</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <section class='tabs-content'>
+                        <article id='tabs-1'>
+                            <img src="assets/images/about-image-1-940x460.jpg" alt="Vizyon ve Misyonumuz">
+                            <h4>Vizyon Ve Misyonumuz</h4>
+
+                            <h5 class="text-dark">Vizyonumuz</h5>
+                            <p>jasomder, süreçlerimizde ve kalite yöntemlerimizde mükemmelliğe ulaşarak
+                                müşterilerimizin zevki olmalıdır.</p>
+
+                            <p>Vizyonumuz, küresel çapta genişleme ile Türkiye'de lider yönetim danışmanlığı ve
+                                teknoloji hizmetleri şirketi olmaktır.</p>
+
+                            <p>Herkes için refah, anlam ve bağlantı dolu bir iş dünyası yaratmaktır.</p>
+
+                            <h5 class="text-dark">Misyonumuz</h5>
+                            <p>En güncel Bilgi Teknolojisi olanaklarını kullandırarak müşterilerimizin
+                                rekabet gücünü arttırmak, uzun vadeli ve güvene dayalı ilişkilerle de en üst düzeyde
+                                Müşteri Memnuniyeti yaratmaktır.</p>
+
+                            <p>Ekibimiz, sonuç veren zorlayıcı pazarlama mesajlarıyla ruha ilham vermek, kalbe nüfuz
+                                etmek ve zihni ateşlemek için çalışarak dünyadaki herhangi bir işin hayatını emecek
+                                ilgisizliği ortadan kaldırmak için çalışır.</p>
+
+                        </article>
+                        <article id='tabs-2'>
+                            <img src="assets/images/prensip.jpg" alt="Değerlerimiz">
+                            <h4>Değerlerimiz</h4>
+                            <p>Müşterilerimizin iş ihtiyaçlarını karşılamak ve beklentilerini yükseltmek için gelişen
+                                teknolojileri kullanarak yenilikçi dijital çözümler sunmak.</p>
+
+                            <p>Dünya standartlarında ürünler oluşturmamıza yardımcı olmak için şirketimizde bir güven,
+                                işbirliği, açıklık ve hesap verebilirlik kültürü oluşturmak.</p>
+
+                            <p>To become truly unique by implementing people-first philosophy to drive every business
+                                interaction.</p>
+
+                            <p>Yenilikçi ve son teknoloji çözümlerimizle insan hayatı ve işletmeler üzerinde olumlu bir
+                                etki yaratmak.</p>
+                        </article>
+                        <article id='tabs-3'>
+                            <img src="assets/images/ourwork.jpg" alt="Ne Yapıyoruz">
+                            <h4>İşimiz</h4>
+                            <p>Şirketler, giderek daha bağlantılı hale gelen bir dünyada rekabet edebilmek için bu
+                                dijital dönüşümü benimsemelidir. Teknolojik gelişmeler hızlanmaya devam ediyor ve
+                                şirketler yok olmaktan kaçınmak için dijitalleşmeli ve uyum sağlamalı.</p>
+                            <p>Dijital artık herkesin günlük yaşamının bir parçası ve varlığı yıldan yıla büyümeye devam
+                                edecek. Günümüzde akıllı telefon hayatımızın vazgeçilmez bir aracı haline geldi:
+                                mesajlarımızı, fotoğraflarımızı, anılarımızı, iş e-postalarımızı ve bizim için
+                                vazgeçilmez hale gelen birçok uygulamayı saklıyoruz. Ceplerimize sığan bu küçük cihaz,
+                                mesafeyi ortadan kaldırmayı ve internet aracılığıyla dünyanın her yerinden insanlarla
+                                bağlantı kurmayı mümkün kılıyor.</p>
+
+                            <p>Şirketler artık bu gerçeği inkar edemezler ve bazıları iş modellerini dijitale
+                                dayandırarak bunu açıkça anladılar. Örneğin coğrafi konum ve gerçek zamana dayanan
+                                milyar dolarlık bir "Taksi" şirketi
+                                Uber'in durumu böyledir.</p>
+                        </article>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Our Classes End ***** -->
+
+
+
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+        <div class="container">
+            <div class="section-header">
+                <h3>Takım</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-lg-4 col-md-4 wow fadeInUp">
+                    <div class="member wrapper">
+                        <img src="assets/images/team/mra.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Mustafa Ayhan</h4>
+                                <span>İşletme Danışmanı</span>
+                                <div class="social">
+                                    <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a> -->
+                                    <a href="https://www.linkedin.com/in/maconsultant/"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center">Mustafa, Pharmackt'ta İşletme Danışmanıdır. Üniversitede İşletme Yönetimi
+                        derecesine sahiptir.
+                        Farklı küresel ilaç şirketlerinde belirli alanlarda (onkoloji, hematoloji, nadir hastalıklar ve
+                        kanser genetik test pazarı) ürün uzmanı, proje yöneticisi ve hesap yöneticisi olarak on yıllık
+                        bir deneyime sahiptir. Ürün lansmanı, kişiler arası iyi
+                        ilişkiler kurma kapasitesine ilave olarak, kilit fikir liderliği ve hesap yönetiminde
+                        profesyonel olması onu bilişim alanında küresel olarak yetkin bir ortak yapar. Mustafa İngilizce
+                        ve Almanca bilmektedir.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="member wrapper">
+                        <img src="assets/images/team/mehmet-eren.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Mehmet Eren BALLI</h4>
+                                <span>Dijital Danışman</span>
+                                <div class="social">
+                                    <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a> -->
+                                    <a href="https://www.linkedin.com/in/mehmet-eren-ball%C4%B1-2035a7167/"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center">Mehmet yazılımcı ve siber güvenlik meraklısıdır. Firmalara proje bazlı
+                        sözleşmeler için ticari
+                        ürünleri tamamladı. Şuanda Gazi Üniversitesi Bilgisayar Mühendisliği Bölümü'nde lisans eğitimine
+                        devam etmektedir. Mehmet, ağırlıklı olarak güvenli tekniklerle web ve mobil geliştirmeye
+                        odaklanmaktadır. Akıcı olarak İngilizce konuşur. Küçük ölçekli ağ sistemlerini yönetme konusunda
+                        deneyimlidir.</p>
+                </div>
+
+                <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="member">
+                        <img src="assets/images/team/mehmet-eren.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>William Anderson</h4>
+                                <span>CTO</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="member">
+                        <img src="assets/images/team/mehmet-eren.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Amanda Jepson</h4>
+                                <span>Accountant</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-google-plus"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+    </section><!-- #team -->
+
+
+
+
+    <script>
+        function locate_to_contact() {
+            location.href = "./contact.html";
+        }
+    </script>
+
+    <div class="container-fluid mx-auto">
+        <div class="row justify-content-center top-part">
+            <div class="col-md-6 text-center center-content">
+                <div class="d-flex-inline">
+                    <h3 class="footer-heading">jasomder ile Proje Başlatın</h3>
+                </div>
+                <div class="d-flex-inline" style="margin-top: 20px;">
+                    <p>İhtiyacınızı uygun teknolojilerle çözüme kavuşturalım. Bize danışıp fiyat hakkında anlaşmak için
+                        sayfamızdaki bilgilerimizden faydalanın veya bize sitemizden mesaj atın. Size yardımcı
+                        olabileceğimiz ve katabileceğimiz çok şey var. </p>
+                </div>
+                <div class="d-flex-inline pt-2"> <button onclick="locate_to_contact()" class="btn-pink btn">Fiyat
+                        Danışın</button> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="line mb-3 mx-auto"></div>
+            <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3">
+                <div class="p-2 flex-fill bd-highlight mb-5 mb-md-0">
+                    <h3>jasomder</h3> <small>Copyright &copy 2021</small>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Ankara</h5>
+                    <p class="mb-0">498 Sokak No:6A Birlik Mahallesi</p>
+                    <p class="mb-0">Çankaya - Ankara</p>
+                    <p class="mb-0">Turkey 06610</p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">İletişim Bilgileri</h5>
+                    <p class="mb-0"><i class="fa fa-phone"></i> +90 506 175 5188</p>
+                    <p class="mb-0"><i class="fa fa-envelope"></i> bilgi@jasomder.org.tr</p>
+                    <!-- <p class="mb-0">Poland</p> -->
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Faydalı Linkler</h5>
+                    <p class="mb-0"><a href="about.html">Hakkımızda</a></p>
+                    <p class="mb-0"><a href="services.html">Hizmetlerimiz</a></p>
+                    <p class="mb-0"><a href="contact.html">İletişim</a></p>
+                    <!-- <p class="mb-0"><a href="blog.html">Blog</a></p> -->
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Özel Linkler</h5>
+                    <p class="mb-0"><a href="privacy-policy.html">Gizlilik Politikası</a></p>
+                    <p class="mb-0"><a href="career.html">Kariyer</a></p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Pharmackt</h5>
+                    <p class="mb-0" style="white-space: pre-line;">jasomder bir <a
+                            href="https://www.pharmackt.com">Pharmackt
+                            şirketidir.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="line mb-3 mx-auto"></div>
+        </div>
+        <div class="row bottom-part">
+            <div class="d-lg-flex justify-content-between bd-highlight col-md-12 mb-5 px-5">
+                <div class="p-2 align-self-center flex-fill bd-highlight">
+                    <div class="fa fa-facebook px-2"></div>
+                    <div class="fa fa-linkedin px-2"></div>
+                    <div class="fa fa-twitter px-2"></div>
+                    <div class="fa fa-instagram px-2"></div>
+                </div>
+                <div class="p-2 row flex-fill bd-highlight justify-content-left">
+                    <div class="p-2 d-flex flex-wrap">
+                        <div class="p-2 flex-fill d-flex bd-highlight">Başarı</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Tecrübe</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Fikir</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Tespit</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">İhtiyaç</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Dijital</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Pragmatik</div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">--></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight">Manifesto</div>
+                    </div>
+                </div>
+                <!-- <div class="p-2 align-self-center flex-fill bd-highlight">
+                    <p> Şu yollarla da ulaşabilirsiniz:</p>
+                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<span id="contact">888-777-666</span></div>
+                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;bilgi@jasomder.org.tr</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+</body>
+
+</html>
