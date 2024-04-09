@@ -138,7 +138,7 @@ ul {
 p {
   font-size: 14px;
   line-height: 25px;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
 }
 
 /* 
@@ -1634,4 +1634,20 @@ a {
 a:focus,
 a:hover {
   color: #f9735b;
+}
+
+.bom-role {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  letter-spacing: 0.25px;
+  color: #232d39;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.bom-name {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 25px;
 }

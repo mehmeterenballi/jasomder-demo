@@ -1,0 +1,3031 @@
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    h2 {
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .p,
+    p {
+        /* color: black; */
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+        margin: 0pt;
+    }
+
+    .s1 {
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    h1 {
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    .s2 {
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l1>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l1>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l2 {
+        padding-left: 0pt;
+        counter-reset: d1 18;
+    }
+
+    #l2>li>*:first-child:before {
+        counter-increment: d1;
+        content: counter(d1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l2>li:first-child>*:first-child:before {
+        counter-increment: d1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l3 {
+        padding-left: 0pt;
+        counter-reset: e1 1;
+    }
+
+    #l3>li>*:first-child:before {
+        counter-increment: e1;
+        content: counter(e1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l3>li:first-child>*:first-child:before {
+        counter-increment: e1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l4 {
+        padding-left: 0pt;
+        counter-reset: f1 1;
+    }
+
+    #l4>li>*:first-child:before {
+        counter-increment: f1;
+        content: counter(f1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l4>li:first-child>*:first-child:before {
+        counter-increment: f1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l5 {
+        padding-left: 0pt;
+        counter-reset: g1 1;
+    }
+
+    #l5>li>*:first-child:before {
+        counter-increment: g1;
+        content: counter(g1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l5>li:first-child>*:first-child:before {
+        counter-increment: g1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l6 {
+        padding-left: 0pt;
+        counter-reset: h1 1;
+    }
+
+    #l6>li>*:first-child:before {
+        counter-increment: h1;
+        content: counter(h1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l6>li:first-child>*:first-child:before {
+        counter-increment: h1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l7 {
+        padding-left: 0pt;
+        counter-reset: i1 1;
+    }
+
+    #l7>li>*:first-child:before {
+        counter-increment: i1;
+        content: counter(i1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l7>li:first-child>*:first-child:before {
+        counter-increment: i1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l8 {
+        padding-left: 0pt;
+        counter-reset: j1 1;
+    }
+
+    #l8>li>*:first-child:before {
+        counter-increment: j1;
+        content: counter(j1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l8>li:first-child>*:first-child:before {
+        counter-increment: j1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l9 {
+        padding-left: 0pt;
+        counter-reset: k1 1;
+    }
+
+    #l9>li>*:first-child:before {
+        counter-increment: k1;
+        content: counter(k1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l9>li:first-child>*:first-child:before {
+        counter-increment: k1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l10 {
+        padding-left: 0pt;
+        counter-reset: l1 1;
+    }
+
+    #l10>li>*:first-child:before {
+        counter-increment: l1;
+        content: counter(l1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l10>li:first-child>*:first-child:before {
+        counter-increment: l1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l11 {
+        padding-left: 0pt;
+        counter-reset: m1 1;
+    }
+
+    #l11>li>*:first-child:before {
+        counter-increment: m1;
+        content: counter(m1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l11>li:first-child>*:first-child:before {
+        counter-increment: m1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l12 {
+        padding-left: 0pt;
+        counter-reset: n1 1;
+    }
+
+    #l12>li>*:first-child:before {
+        counter-increment: n1;
+        content: counter(n1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l12>li:first-child>*:first-child:before {
+        counter-increment: n1 0;
+    }
+
+    #l13 {
+        padding-left: 0pt;
+        counter-reset: n2 1;
+    }
+
+    #l13>li>*:first-child:before {
+        counter-increment: n2;
+        content: "(" counter(n2, decimal)") ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l13>li:first-child>*:first-child:before {
+        counter-increment: n2 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l14 {
+        padding-left: 0pt;
+        counter-reset: o1 1;
+    }
+
+    #l14>li>*:first-child:before {
+        counter-increment: o1;
+        content: "(" counter(o1, decimal)") ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l14>li:first-child>*:first-child:before {
+        counter-increment: o1 0;
+    }
+
+    #l15 {
+        padding-left: 0pt;
+        counter-reset: o2 1;
+    }
+
+    #l15>li>*:first-child:before {
+        counter-increment: o2;
+        content: counter(o2, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l15>li:first-child>*:first-child:before {
+        counter-increment: o2 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l16 {
+        padding-left: 0pt;
+        counter-reset: p1 1;
+    }
+
+    #l16>li>*:first-child:before {
+        counter-increment: p1;
+        content: counter(p1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l16>li:first-child>*:first-child:before {
+        counter-increment: p1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l17 {
+        padding-left: 0pt;
+        counter-reset: q1 1;
+    }
+
+    #l17>li>*:first-child:before {
+        counter-increment: q1;
+        content: counter(q1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l17>li:first-child>*:first-child:before {
+        counter-increment: q1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l18 {
+        padding-left: 0pt;
+        counter-reset: r1 1;
+    }
+
+    #l18>li>*:first-child:before {
+        counter-increment: r1;
+        content: counter(r1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l18>li:first-child>*:first-child:before {
+        counter-increment: r1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l19 {
+        padding-left: 0pt;
+        counter-reset: s1 1;
+    }
+
+    #l19>li>*:first-child:before {
+        counter-increment: s1;
+        content: counter(s1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l19>li:first-child>*:first-child:before {
+        counter-increment: s1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l20 {
+        padding-left: 0pt;
+        counter-reset: t1 1;
+    }
+
+    #l20>li>*:first-child:before {
+        counter-increment: t1;
+        content: counter(t1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l20>li:first-child>*:first-child:before {
+        counter-increment: t1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l21 {
+        padding-left: 0pt;
+        counter-reset: u1 1;
+    }
+
+    #l21>li>*:first-child:before {
+        counter-increment: u1;
+        content: counter(u1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l21>li:first-child>*:first-child:before {
+        counter-increment: u1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l22 {
+        padding-left: 0pt;
+        counter-reset: v1 1;
+    }
+
+    #l22>li>*:first-child:before {
+        counter-increment: v1;
+        content: counter(v1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l22>li:first-child>*:first-child:before {
+        counter-increment: v1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l23 {
+        padding-left: 0pt;
+        counter-reset: w1 1;
+    }
+
+    #l23>li>*:first-child:before {
+        counter-increment: w1;
+        content: counter(w1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l23>li:first-child>*:first-child:before {
+        counter-increment: w1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l24 {
+        padding-left: 0pt;
+        counter-reset: x1 1;
+    }
+
+    #l24>li>*:first-child:before {
+        counter-increment: x1;
+        content: counter(x1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l24>li:first-child>*:first-child:before {
+        counter-increment: x1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l25 {
+        padding-left: 0pt;
+        counter-reset: y1 1;
+    }
+
+    #l25>li>*:first-child:before {
+        counter-increment: y1;
+        content: counter(y1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l25>li:first-child>*:first-child:before {
+        counter-increment: y1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l26 {
+        padding-left: 0pt;
+        counter-reset: z1 1;
+    }
+
+    #l26>li>*:first-child:before {
+        counter-increment: z1;
+        content: counter(z1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l26>li:first-child>*:first-child:before {
+        counter-increment: z1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l27 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+    }
+
+    #l27>li>*:first-child:before {
+        counter-increment: c1;
+        content: counter(c1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l27>li:first-child>*:first-child:before {
+        counter-increment: c1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l28 {
+        padding-left: 0pt;
+        counter-reset: d1 1;
+    }
+
+    #l28>li>*:first-child:before {
+        counter-increment: d1;
+        content: counter(d1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l28>li:first-child>*:first-child:before {
+        counter-increment: d1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l29 {
+        padding-left: 0pt;
+        counter-reset: e1 1;
+    }
+
+    #l29>li>*:first-child:before {
+        counter-increment: e1;
+        content: counter(e1, lower-latin)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l29>li:first-child>*:first-child:before {
+        counter-increment: e1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l30 {
+        padding-left: 0pt;
+        counter-reset: f1 1;
+    }
+
+    #l30>li>*:first-child:before {
+        counter-increment: f1;
+        content: "(" counter(f1, decimal)") ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l30>li:first-child>*:first-child:before {
+        counter-increment: f1 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    #l31 {
+        padding-left: 0pt;
+        counter-reset: g1 1;
+    }
+
+    #l31>li>*:first-child:before {
+        counter-increment: g1;
+        content: counter(g1, decimal)". ";
+        color: black;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    #l31>li:first-child>*:first-child:before {
+        counter-increment: g1 0;
+    }
+</style>
+
+<div class="container">
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; font-size: 32px; padding-top: 3pt;padding-left: 206pt;text-indent: -164pt;line-height: 1.5;text-align: left;">
+        1990 SINIF
+        OKULU MEZUNLARI YARDIMLAŞMA VE DAYANIŞMA DERNEĞİ TÜZÜĞÜ BİRİNCİ BÖLÜM</h2>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger;  padding-left: 5pt; text-indent: 0pt; line-height: 11pt; text-align: left; padding-top: 30px;">
+        GENEL HÜKÜMLER
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-1 KAPSAM VE DAYANAK</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Bu Tüzük; Derneğin kuruluşu,amacı,
+        hukuki
+        statüsü, teşkilat yapısı, faaliyetleri, üyelik işlemleri ile gelir ve giderlerine ilişkin usul ve esasları
+        belirlemek üzere, 4721 sayılı Türk Medeni Kanunu ve 5253 sayılı Dernekler Kanunu hükümlerine göre
+        hazırlanmıştır.</p>
+    padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">MADDE-2
+    DERNEĞİN ADI
+    VE MERKEZİ
+    </h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Derneğin Adı; “1990 Sınıf Okulu
+        Mezunları
+        Yardımlaşma ve Dayanışma Derneği’dir.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Derneğin merkezi Ankara&#39;dadır.
+        Lüzum
+        görülmesi halinde yönetim kurulu tarafından temsilcilikler açılabilir. Derneğin şubesi açılmayacaktır.</p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-3
+        DERNEĞİN AMACI
+    </h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Atatürk ilke ve inkılaplarına, laik ve
+        demokratik
+        Cumhuriyet değerlerine daima ve her koşulda sahip çıkan, bilimselliği, çağdaşlığı ve hukukun üstünlüğünü esas
+        alan bir Sivil Toplum Kuruluşu olarak;</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Üyeleri arasında irtibatı sağlamak;
+        sevgi ve saygı
+        bağlarını güçlendirmek, sosyal, kültürel, ekonomik, eğitim ve sağlık başta olmak üzere ihtiyaç duyulan alanlarda
+        yardımlaşma, dayanışma ve işbirliği imkanlarını artırmak,</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+        İçinde bulunduğu
+        toplumun her
+        alanda gelişmesine ve kalkınmasına imkanlar ölçüsünde katkı sağlamaktır.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-4 DERNEKÇE SÜRDÜRÜLECEK
+        ÇALIŞMA
+        KONULARI VE
+        BİÇİMLERİ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Dernek, amacını gerçekleştirmek için
+        aşağıda
+        belirtilen ve benzeri faaliyetleri yürütür.</p>
+    <ol id="l1">
+        <li style="font-family: Segoe UI;" data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: left;">
+                Faaliyetlerinin
+                etkinleştirilmesi ve geliştirilmesi için araştırmalar yapmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Kurs, seminer, konferans ve
+                panel gibi
+                eğitim çalışmaları düzenlemek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Amacın gerçekleştirilmesi
+                için gerekli
+                olan her türlü bilgi, belge, doküman ve yayınları temin etmek, dokümantasyon merkezi oluşturmak,
+                çalışmalarını duyurmak için amaçları doğrultusunda gerekli izinleri alarak gazete, dergi, kitap ve
+                bülten gibi yayınlar çıkarmak, sosyal medyayı kullanmak</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ç. Amacın
+                gerçekleştirilmesi için sağlıklı bir çalışma ortamını sağlamak, her türlü teknik araç ve gereci,
+                demirbaş ve kırtasiye malzemelerini temin</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                etmek,satın almak</p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Gerekli
+                izinler alınmak
+                şartıyla yardım toplama faaliyetlerinde bulunmak, yurt içinden ve yurt dışından bağış kabul etmek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Tüzük amacının
+                gerçekleştirilmesi için
+                ihtiyaç duyulan gelirleri temin etmek amacıyla, genel kurul kararıyla iktisadi, ticari ve sanayi
+                işletmeler kurmak ve işletmek,</p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyelerinin
+                yararlanmaları ve boş zamanlarını değerlendirebilmeleri için lokal açmak, sosyal ve kültürel tesisler
+                kurmak ve bunları tefriş etmek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyeleri arasında beşeri
+                münasebetlerin
+                geliştirilmesi ve devam ettirilmesi için yemekli toplantılar, konser, balo, tiyatro, sergi, gezi ve
+                eğlenceli etkinlikler vb. düzenlemek veya üyelerinin bu tür etkinliklerden yararlanmalarını sağlamak,
+            </p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ğ. Dernek faaliyetleri için
+                ihtiyaç
+                duyulan taşınır, taşınmaz mal satın almak, satmak, kiralamak, kiraya vermek ve taşınmazlar üzerinde ayni
+                hak tesis etmek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="h.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Amacın gerçekleştirilmesi
+                için gerek
+                görülmesi durumunda, Genel Kurul Kararıyla yurt içinde ve yurt dışında vakıf kurmak, federasyon kurmak
+                veya kurulu bir federasyona katılmak, gerekli izin alınarak derneklerin kurabileceği tesisleri kurmak,
+            </p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ı.
+                Uluslararası
+                faaliyette bulunmak, genel kurul kararıyla yurt dışındaki dernek veya kuruluşlara üye olmak ve bu
+                kuruluşlarla ortak çalışmalar yapmak veya yardımlaşmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="i.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Amacın gerçekleştirilmesi
+                için gerek
+                görülmesi halinde, 5072 sayılı Dernek ve Vakıfların Kamu Kurum ve Kuruluşları ile İlişkilerine Dair
+                Kanun hükümleri saklı kalmak üzere, kamu kurum ve kuruluşları ile görev alanlarına giren konularda ortak
+                projeler yürütmek,</p>
+        </li>
+        <li data-list-text="j.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 13pt;text-indent: -7pt;text-align: justify;">
+                Gerekli
+                görülen
+                yerlerde temsilcilikler açmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="k.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin amacı ile ilgisi
+                bulunan ve
+                kanunlarla yasaklanmayan alanlarda, diğer derneklerle veya vakıf, sendika ve benzeri sivil toplum
+                kuruluşlarıyla ortak bir amacı gerçekleştirmek için platformlar oluşturmak,</p>
+        </li>
+        <li data-list-text="l.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Milli
+                Bayramlar ve
+                önemli ulusal günlerde yapılan resmi törenlere katılmak; Atatürk, vatan, millet ve bayrak sevgisini
+                yüceltmeye, ulusal birlik ve bütünlüğü pekiştirmeye yönelik etkinliklerde bulunmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="m.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyelerin ve birinci derece
+                yakınlarının
+                doğum, düğün, hastalık, vefat, mekan açılışı gibi özel günlerinde imkanlar ölçüsünde Dernek adına
+                çelenk, çiçek vb. hediye göndermek, gazetelere ilan vermek, sosyal medyadan paylaşmak ve ziyaretlerde
+                bulunmak</p>
+        </li>
+        <li data-list-text="n.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Her ne
+                sebeple olursa
+                olsun muhtaç duruma düşmüş ve bilhassa vefat etmiş veya ağır hastalık nedeniyle çalışamayacak duruma
+                düşmüş üyelerin durumlarını tespit ederek kendilerine veya geride kalan eş ve çocuklarına yardım etmek
+                üzere üyeler arasında yardım kampanyaları düzenlemek,</p>
+        </li>
+        <li data-list-text="o.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyelik
+                şartlarına haiz
+                olup da Dernek kurulmadan önce vefat edenlerin birinci derecede akrabalarına üye olup olmadığına
+                bakılmaksızın manevi destekte bulunmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ö. Üyelik şartlarına haiz
+                olup da Dernek
+                kurulmadan önce vefat edenlerin ihtiyaç sahibi birinci derece akrabalarına, üye olup olmadığına
+                bakılmaksızın, Yönetim Kurul Kararıyla imkanlar ölçüsünde maddi yardım sağlamak.</p>
+        </li>
+        <li data-list-text="p.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Vefat
+                eden Dernek
+                üyelerinin adlarını yaşatmak için projeler hazırlamak ve gerçekleştirmek,</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l2">
+        <li data-list-text="r.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: -8pt;line-height: 11pt;text-align: justify;">
+                Yardım
+                toplama
+                kanununa uygun olarak Usul ve esasları Genel</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Kurulun kabul edeceği
+                yönerge ile
+                düzenlenmek şartıyla, ilköğretimden yüksek lisans seviyesine kadar ihtiyaç sahibi öğrencilere burs
+                sağlamak,</p>
+        </li>
+        <li data-list-text="s.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Gerekli
+                izinler alınmak
+                şartıyla Genel Kurul Kararı ile Yaşlı bakımevi, öğrenci yurdu, kreş, engellilere yönelik eğitim
+                tesisleri, meslek edindirme kursları vb. alanlarda tesis ve sistem kurmak, işletmek, mevcutlardan uygun
+                görülenlere destek sağlamak, bu yönde proje üretmek ve yardım kampanyaları düzenlenmek,</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ş. Üyelerin
+                ; Çocuk ve
+                gençlerine yönelik olarak; Atatürk ilkelerinin benimsenmesi ve milli değerlerin kazandırılması
+                kapsamında gezi düzenlemek, eğitim ve kültürel faaliyetleri icra etmek, yönetim kurulunun uygun göreceği
+                faaliyetlere iştirak etmek,</p>
+        </li>
+        <li data-list-text="t.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Çağdaş,
+                modern, akıl ve
+                bilimi esas alan, milli ve manevi değerlerine bağlı bir toplumda yaşamak için, yönetim kurulunun uygun
+                göreceği toplumsal gelişime destek faaliyetlerini planlamak ve icra etmek,</p>
+        </li>
+        <li data-list-text="u.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyeler
+                arasındaki
+                bağları kuvvetlendirmek maksadıyla, üyelerin iletişim bilgilerini sürekli olarak güncel tutmak, üyelerin
+                rızalarını almak koşuluyla diğer üyelerle paylaşmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ü. Üyelerin uzman olduğu
+                özel alanlarda
+                diğer üyelere bilgi desteği sağlamak,</p>
+        </li>
+        <li data-list-text="v.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek
+                faaliyetlerinin
+                yürütülmesi, ilan ve duyuruların yapılması maksadıyla, yönetim kurulu kararıyla web sayfası kurmak ve
+                işletmek, sosyal medyada grup oluşturmaktır.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Madde-5 DERNEĞİN FAALİYET
+        ALANI</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Dernek, sosyal alanda yurt içinde ve
+        yurt dışında
+        faaliyet gösterir.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt; text-indent: 0pt; text-align: center;">
+        İKİNCİ BÖLÜM</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ÜYE OLMA HAKKI VE
+        ÜYELİK İŞLEMLERİ
+    </p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-6 ÜYELİK KOŞULLARI</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Yürürlükteki yasalara
+        göre
+        derneklere üye olabilme şartlarını taşımakla beraber;</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        1990 Jandarma Sınıf Okulu (Teknik ve
+        Yardımcı
+        Sınıflar dahil) mezunu olan kişiler ve birinci dereceden aile fertleri talepte bulunmaları ve Yönetim Kurulu
+        tarafından kabul edilmeleri halinde Derneğe “asıl üye” olarak,</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Vatana, Ulusa ve Türk Silahlı
+        Kuvvetlerine
+        unutulmaz hizmetleri geçen kişiler ve şehit düşenlerin birinci derecede yakınları talepte bulunmaları ve bu
+        talebin Yönetim Kurulunca kabul edilmesi durumunda “onur üyesi” olarak derneğe üye olabilirler.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Ancak, Türk Silâhlı Kuvvetleri ve
+        kolluk
+        kuvvetleri mensupları ile kamu kurum ve kuruluşlarının memur statüsündeki görevlileri hakkında özel kanunlarında
+        getirilen kısıtlamalar saklıdır.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Yüz kızartıcı suçlar, organize
+        suçlar ve terör
+        suçlarından dolayı hüküm giyenler affa uğramış, hükmün açıklanması geri bırakılmış veya ertelenmiş olsa bile
+        mahkûmiyeti bulunanlar ile bu suçlardan dolayı halen soruşturma veya kovuşturma altında bulunanlar derneğe üye
+        kabul edilmezler.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-7 ÜYE OLMA USULÜ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l3">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Derneğe üye olmak isteyen
+                kişi, Dernek
+                Başkanlığına yazılı olarak ve/veya derneğin resmi e-postasına müracaat eder.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Üye
+                başvuru
+                belgesini eksiksiz doldurarak, bizzat veya posta/elektronik posta yoluyla Dernek Merkezine ulaştırır.
+            </p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Başvuru belgesinin Dernek
+                Merkezine
+                ulaşmasını müteakip evrak kayıt defterine kayıt yapılır.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ç. Yönetim
+                Kurulu,
+                başvuruları inceler ve 30 gün içinde kendi içinde yapacağı gizli oylama ile karara bağlayarak sonucu
+                başvuru sahibine yazılı olarak ve/veya resmi elektronik posta yoluyla bildirir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Başvurunun reddi halinde
+                gerekçe
+                bildirilmesi zorunluluğu yoktur.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                İlgili, bu bildirime karşı
+                Genel Kurul
+                nezdinde itiraz edebilir. İtiraz, ilk Genel Kurul toplantısında gündeme alınır. Genel Kurulun itiraz
+                hakkında verdiği karar kesindir.</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyelerden
+                vefat
+                edenlerin birinci derece akrabaları, Yönetim Kurulunun yapacağı yazılı davet üzerine ya da kendiliğinden
+                müracaat etmek suretiyle üyelik başvurusunda bulunabilir. Başvuru üzerine aynı usul uygulanır.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;text-indent: 0pt;text-align: left;">
+                <br />
+            </p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Onur üyeliği için yapılan
+                başvurularda;
+                Yönetim Kurulu, başvuruları inceler ve 30 gün içinde kendi içinde yapacağı gizli oylama ile karara
+                bağlayarak sonucu başvuru sahibine yazılı olarak bildirir. İlgili, bu bildirime karşı Genel Kurul
+                nezdinde itiraz edebilir. Yönetim Kurulunca başvurunun kabul edilmesi durumunda, ilgili geçici olarak
+                onur üyeliğine kabul edilir ve haklardan yararlanmaya başlar. İlk Genel Kurulda itiraz edenler ile
+                üyeliğe geçici kabul edilenlerin durumu görüşülür. Üyeliklerine karar verilmesi halinde kesin olarak
+                kayıtları yapılır. Genel Kurulun verdiği karar kesindir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Onur üyesi sayısı; şehit
+                yakınları
+                hariç, kayıtlı üye sayısının %10’unu geçemez.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="h.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Üyeliğe kabul edilenler,
+                üye kayıt
+                defterine kaydedilir.</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        ı. Üyelik
+        başlangıç tarihi,
+        başvurunun karara bağlandığı tarihtir.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-8 ÜYELİĞE İTİRAZ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l4">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim Kurulu, üyelik için
+                başvuran
+                kişilerin isim listesini askıya çıkarır ve bu listeler yedi gün süreyle askıda kalır. Askıya çıkarılan
+                isim listesi, ayrıca derneğin web sayfasında ve diğer uygun iletişim vasıtaları ile mevcut üyelere
+                duyurulur.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyeler,
+                başvurularla
+                ilgili olarak Yönetim Kuruluna askı süresi içinde yazılı itirazda bulunabilir. Yönetim Kurulu bu
+                itirazları üyelik başvurusunu takip eden 30 gün içinde karara bağlar ve sonucunu ilgililere bildirir.
+            </p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 16pt;text-indent: -10pt;text-align: justify;">
+                İtirazın reddine dair
+                kararlar
+                kesindir. İtirazın kabul edilerek üyelik başvurusunun reddine dair kararlara ise ilgili</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        tarafından Genel Kurul
+        nezdinde
+        itiraz edilebilir. İtiraz, ilk Genel Kurul toplantısında gündeme alınır. Genel Kurulun itiraz hakkında verdiği
+        karar kesindir.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-9 ÜYELERİN HAKLARI</h2>
+    <ol id="l5">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: left;">
+                Dernek
+                üyeleri eşit
+                haklara sahiptirler. Üyeler arasında eşitliği bozan veya ayrıcalık tanıyan uygulamalar yapılamaz.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Her üyenin Derneğin
+                faaliyetlerinden
+                haberdar olma ve katılma hakkı vardır.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Her üyenin Derneğin yönetimine
+                katılma hakkı
+                vardır. Her üye Genel Kurul üyesidir ve Genel Kurulda bir oy hakkı vardır. Üye oyunu şahsen kullanmak
+                zorundadır.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-10
+        ÜYELERİN
+        YÜKÜMLÜLÜKLERİ
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l6">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Üyeler Derneğin amaçlarına ve
+                ilkelerine
+                uygun davranmak ve özellikle amacın gerçekleşmesini güçleştirici veya engelleyici davranışlardan
+                kaçınmak zorundadırlar.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Her üye
+                Dernek düzenine
+                uymak ve Derneğin amaç ve ilkelerine sadakat göstermekle yükümlüdür.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Her üye Dernek amaçlarının
+                gerçekleşmesi ve
+                borçlarının karşılanması için tespit edilen yıllık üyelik aidatını ödemekle yükümlüdür. Dernekten çıkan
+                ya da çıkarılan üye, üyelikte geçirdiği sürenin aidatını vermek zorundadır.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–11
+        ÜYELİKTEN
+        ÇIKMA</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l7">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Hiç kimse Dernekte üye kalmaya
+                zorlanamaz.
+                Her üye yazılı olarak bildirmek kaydıyla Dernekten çıkma hakkına sahiptir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Üyenin istifa dilekçesi Yönetim
+                Kuruluna
+                ulaştığı anda çıkış işlemleri sonuçlanmış sayılır ve durum Yönetim Kurulu kararıyla tespit edilerek üye
+                kayıt defterine işlenir.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–12
+        ÜYELİKTEN
+        ÇIKARILMA</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Dernek üyeliğinden çıkarılmayı
+        gerektiren haller:
+    </p>
+    <ol id="l8">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: left;">
+                Dernek tüzüğüne aykırı
+                davranışlarda
+                bulunmak,</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Verilen
+                görevlerden
+                sürekli kaçınmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;line-height: 200%;text-align: left;">
+                Dernek
+                organlarınca
+                verilen kararlara uymamak, ç. Üye olma şartlarını kaybetmiş olmak,</p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;line-height: 11pt;text-align: left;">
+                Sosyal ve
+                ahlaki
+                seviyesi ile yaşantısı Dernek amaç ve ilkeleri ile bağdaşmamak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: left;">
+                Derneğin amaç ve ilkelerine
+                sadakat
+                yükümlülüğünü ihlal etmek,</p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 13pt;text-indent: -8pt;text-align: left;">
+                Üyelere
+                karşı suç
+                işlemek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;line-height: 200%;text-align: left;">
+                Üyelerin
+                şeref ve
+                haysiyetlerini zedeleyen davranışlarda bulunmak, ğ. Derneğin kuruluş amaçlarına aykırı hareketlerde
+                bulunmak,</p>
+        </li>
+        <li data-list-text="h.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;line-height: 200%;text-align: left;">
+                Derneğin
+                toplum
+                içerisindeki itibarını ve saygınlığını zedeleyecek söz ve davranışlarda bulunmak, ı. Yazılı ikazlara
+                rağmen üyelik aidatını altı ay içinde ödememek,</p>
+        </li>
+        <li data-list-text="i.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Devletin güvenliğine,
+                Anayasal düzene ve
+                bu düzenin işleyişine ilişkin suçlar ile yüz kızartıcı suçlar nedeniyle idari/adli soruşturma veya
+                kovuşturma altında bulunanların üyelikleri sonlandırılır. Fakat o ana kadar ödenmiş olan aidatlar geri
+                iade edilmez. Yapılacak soruşturma veya kovuşturma sonucunda üye aklandığı veya beraat ettiği takdirde,
+                kararın kesinleştiği tarihten itibaren üyelikten doğan hak ve borçlar kaldığı yerden devam eder.</p>
+        </li>
+        <li data-list-text="j.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                (a-h)
+                fıkralarındaki
+                eylemleri gerçekleştiren üyeler, diğer üyelerin yazılı başvurusu üzerine ya da resen, Yönetim Kurulu
+                tarafından Onur Kuruluna sevk edilirler. Onur Kurulu incelemesini müteakip değerlendirmesini yazılı
+                olarak Yönetim Kuruluna bildirir. Yönetim Kurulu üye tam sayısı ile yapacağı gizli oylama ile ilgilinin
+                üyelikten çıkıp çıkmayacağına karar verir.</p>
+        </li>
+        <li data-list-text="k.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                İlgili
+                üye,
+                çıkarılma kararına karşı Genel Kurul nezdinde itiraz</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        edebilir. İtiraz, ilk Genel Kurul
+        toplantısında
+        gündeme alınır. Genel Kurulun itiraz hakkında verdiği karar kesindir. Üyelikten çıkarılmasına kesin olarak karar
+        verilen kişiler, hâkim kararı olmadığı sürece bir daha üyeliğe geri alınmazlar.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-13 ONUR ÜYELİĞİ</h2>
+    <ol id="l9">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Vatana,
+                Ulusa ve Türk
+                Silahlı Kuvvetlerine unutulmaz hizmetleri</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                geçen kişiler, derneğe
+                önemli maddi ve
+                manevi katkıda bulunanlar, derneğin tanıtımına ve güçlenmesine büyük katkı sağlayanlar ve şehitlerin
+                birinci derecede yakınları talepte bulunmaları ve bu talebin Yönetim Kurulunca kabul edilmesi durumunda
+                derneğe geçici olarak “onur üyesi” sıfatıyla kabul edilirler. İlk genel kurulda bu üyelerin durumu
+                incelenir ve kabul edilmesi halinde kesin üyelikleri yapılır.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Onur üyeleri; üyelik
+                aidatı ödemez ve
+                Dernek imkanlarından</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        yararlanabilirler. Genel Kurula
+        katılarak söz
+        alabilirler, ancak Genel Kurulda oy verme, Dernek organlarına seçme ve seçilme hakları yoktur.</p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–14 ÜYELİK
+        BELGESİ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Yönetim Kurulunca Dernek Üyelik
+        Belgesi tanzim
+        edilir. Bu belgeler Dernek faaliyetleri dışında kullanılamaz.</p>
+    <p style="text-indent: 0pt; text-align: left;"><br /></p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt; text-indent: 0pt; text-align: center;">
+        ÜÇÜNCÜ BÖLÜM</h2>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–15
+        DERNEĞİN
+        ORGANLARI</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l10">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Derneğin organları; Genel
+                Kurul,
+                Yönetim Kurulu, Denetim Kurulu ve Onur Kuruludur.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Ayrıca ihtiyaç duyulduğu
+                takdirde,
+                Yönetim Kurulunun teklifi ve Genel Kurulun onayı ile başka organlar da oluşturulabilir. Ancak,
+                oluşturulacak ihtiyari organlara, yukarıda sayılan zorunlu organların görev, yetki ve sorumlulukları
+                devredilemez.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–16
+        ORGANLAR İLE
+        İLGİLİ
+        GENEL ESASLAR</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l11">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek Organlarından,
+                Yönetim Kurulu,
+                Denetim Kurulu ve Onur Kurulu Genel Kurulda yapılacak seçimle belirlenir, Seçim 2 yılda bir yapılır ve
+                organlar 2 yıl süre ile görev yapar.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Seçimler
+                için adaylık
+                süreci, Genel Kurul toplantısı için yapılan duyuru ile birlikte başlar ve ilan edilen toplantı başlama
+                saatinden 48 saat önce sona erer. Aday olmak isteyenler Yönetim Kuruluna başvurarak listelerini
+                sunabilecekleri gibi, yazılı olarak da müracaat edebilirler. Postadaki gecikmeler dikkate alınmaz.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Kurul
+                üyeliklerine
+                seçilen asil ve yedek üyeler, en geç 7 gün içinde görevi teslim alır ve kendi aralarında görev bölümü
+                yaparlar.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–17 GENEL KURUL</h2>
+    <ol id="l12">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Dernek
+                Genel
+                Kurulunun Kuruluş Şekli :</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel Kurul, Derneğin en
+                yetkili karar
+                organı olup; Derneğe kayıtlı üyelerden oluşur.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Toplanma Zamanı</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel Kurul, Yönetim
+                Kurulunun çağrısı
+                üzerine, 2 yılda bir Ekim ya da Kasım ayları içinde, Dernek merkezinin bulunduğu ilde ya da Yönetim
+                Kurulunca belirlenecek bir ilde gene Yönetim Kurulunca belirlenecek gün, yer ve/veya elektronik ortamda
+                ve saatte yapılır.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Çağrı
+                Usulü</p>
+            <ol id="l13">
+                <li data-list-text="(1)">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Genel Kurul, Yönetim
+                        Kurulunun
+                        gerekli gördüğü hallerde ya da Denetim Kurulunun veya Dernek üyelerinin beşte birinin yazılı
+                        isteği üzerine, Yönetim Kurulunun çağrısıyla olağanüstü olarak da toplanabilir. Eğer Yönetim
+                        Kurulu, yazılı taleplere rağmen olağanüstü toplantı için 30 gün içerisinde gerekli çağrıyı
+                        yapmaz ise üyelerden birinin istemi üzerine sulh hukuk hâkimi üç üyeyi Genel Kurulu toplantıya
+                        çağırmakla görevlendirir. Yapılacak tüm masraflar Dernek bütçesinden karşılanır. Olağanüstü
+                        Genel Kurulun gündemi çağrıyı yapanlar tarafından düzenlenir.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="(2)">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Genel kurula katılma
+                        hakkı
+                        bulunan üyeler, en az on beş gün önceden, toplantının günü, saati, yeri ve gündemi veya derneğin
+                        internet sayfasında ilan edilmek, yazılı olarak bildirilmek, üyenin bildirdiği elektronik posta
+                        adresine ya da iletişim numarasına mesaj gönderilmek veya mahalli yayın araçları kullanılmak
+                        suretiyle toplantıya çağrılır.</p>
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Bu çağrıda, çoğunluk
+                        sağlanamaması sebebiyle toplantı yapılamazsa, ikinci toplantının hangi gün, saat ve yerde
+                        yapılacağı da belirtilir.</p>
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        İlk toplantı ile
+                        ikinci toplantı
+                        arasındaki süre yedi günden az, altmış günden fazla olamaz.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="(3)">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Toplantı, çoğunluk
+                        sağlanamaması
+                        sebebinin dışında başka bir nedenle geri bırakılırsa, bu durum geri bırakma sebepleri de
+                        belirtilmek suretiyle, ilk toplantı için yapılan çağrı usulüne uygun olarak üyelere duyurulur.
+                        İkinci toplantının geri bırakma tarihinden itibaren en geç altı ay içinde yapılması zorunludur.
+                    </p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Üyeler ikinci toplantıya, birinci
+        fıkrada
+        belirtilen esaslara göre yeniden çağrılır. Genel kurul toplantısı bir defadan fazla geri bırakılamaz.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        ç. Toplantı Usulü</p>
+    <ol id="l14">
+        <li data-list-text="(1)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel
+                Kurul
+                toplantıları; Dernek merkezinin bulunduğu ilde ya da Yönetim Kurulunca belirlenecek bir ilde ilanda
+                belirtilen gün, saat ve yerde yapılır. Genel Kurula fiziken ve/veya elektronik ortamda katılacak üyeler,
+                Yönetim Kurulunca düzenlenen listede adları karşısına imza koyarak ve/veya elektronik ortamdan
+                katılacaklarını belirterek toplantı yerine ve/veya yönetim kurulunca belirtilen elektronik ortama
+                girerler. Toplantıya katılanların sayısı, bu liste üzerinden tespit edilerek tutanağa bağlanır.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: 0pt;text-align: left;">
+                Gerekli çoğunluk sağlanamazsa
+                durum bir
+                tutanakla tespit edilir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(2)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel Kurul, Dernek Tüzüğüne
+                göre Genel
+                Kurula katılma hakkı bulunan üyelerin salt çoğunluğu ile toplanır. Ancak, Tüzük değişikliği ve Derneğin
+                feshi hallerinde üye tam sayısının üçte ikisinin katılımıyla toplanır. İlk toplantıda yeter sayı
+                sağlanamazsa, ikinci toplantıda çoğunluk aranmaz. Ancak ikinci toplantıya katılan üye sayısı Dernek
+                yönetim ve denetleme kurulları üye tam sayısı toplamının iki katından az olamaz.</p>
+        </li>
+        <li data-list-text="(3)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Toplantı,
+                Yönetim
+                Kurulu Başkanı veya görevlendireceği Yönetim Kurulu üyelerinden biri tarafından, çoğunluğun sağlandığına
+                dair tutanağın okunmasından sonra açılır.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(4)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Açılışta Genel Kurul
+                toplantısını
+                yönetmek üzere Divan Başkanlığı seçilir. Divana bir başkan, yeteri kadar başkan vekili ve yazman üye
+                seçilir. Divan Başkanlığı seçimleri açık oylama ile yapılır. Toplantının yönetimi Divan Başkanına
+                aittir. Yazmanlar toplantı tutanağını düzenler, başkan ve başkan vekilleri ile birlikte imzalarlar.
+                İtirazlar oy çokluğu ile çözülür.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(5)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Divan, Genel Kurulda
+                yapılacak seçimlerin
+                tasnif ve sonuçlarını ilan eder; Genel Kurulda yapılan görüşmeleri ve alınan kararları tutanağa geçirir.
+                Tutanağın bir nüshası, Divan Başkanlığı tarafından imzalanarak Yönetim Kuruluna verilir ve duyurulmak
+                üzere üyelere gönderilir.</p>
+        </li>
+        <li data-list-text="(6)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel
+                Kurul
+                toplantısında yalnız gündemde yer alan maddeler görüşülür. Toplantıda hazır bulunan üyelerin en az onda
+                biri gündeme ilişkin teklifte bulunabilirler. Bu teklifin gündeme alınması zorunludur. Bu tür teklifler
+                toplantıda öncelikle karara bağlanır.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(7)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 19pt;text-indent: -14pt;text-align: justify;">
+                Yönetim Kurulu ve Denetim
+                Kurulu
+                üyeleri, kendilerinin ibralarına ilişkin kararlarda oy kullanamaz.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(8)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üyeler, Dernek ile kendisi,
+                eşi, üstsoyu
+                ya da altsoyu arasındaki bir hukuki işlem veya uyuşmazlık konusunda alınacak kararlarda oy
+                kullanamazlar.</p>
+        </li>
+        <li data-list-text="(9)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel
+                Kurulda
+                uygulanacak karar yeter sayısı, toplantıya katılan üye sayısının yarısından bir fazlasıdır. Ancak, Tüzük
+                değişikliği ve Derneğin feshi kararları, toplantıya katılan üyelerin üçte iki çoğunluğuyla alınabilir.
+            </p>
+        </li>
+        <li data-list-text="(10)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Ayrıca tüm
+                üyelerin bir
+                araya gelmeksizin yazılı katılımıyla alınan kararlar ve Dernek üyelerinin tamamının bir araya gelerek
+                aldığı kararlar da geçerlidir. Ancak bu şekilde karar alınması, olağan toplantı yerine geçmez.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <h2
+                style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                MADDE–18 GENEL KURULUN
+                ÇALIŞMA
+                USULU VE
+                SEÇİMLER</h2>
+            <ol id="l15">
+                <li data-list-text="a.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Genel Kurulun
+                        toplantı süresi, Yönetim Kurulu kararı ile belirlenir ve 2 günü aşamaz, gerekirse bu süre Genel
+                        Kurul kararıyla uzatılabilir.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="b.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Genel görüşme
+                        açılmadan önce,
+                        Denetim Kurulu raporları okunarak, geçen döneme ilişkin bilanço, gelir-gider ve kesin hesap
+                        çizelgeleri ile gelecek dönem çalışma programı, gelecek döneme ait bütçe tasarısı görüşülür.
+                        Daha sonra genel görüşme açılır ve Derneğin görev, faaliyet ve geleceğe yönelik planlarından
+                        oluşan politikaları üzerine dilek ve temenni görüşmeleri yapılır.</p>
+                </li>
+                <li data-list-text="c.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                        Yönetim
+                        Kurulu, Denetim Kurulu ve Onur Kuruluna seçilebilmek için aday olmak veya gösterilmek gerekir.
+                    </p>
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                        ç.
+                        Genel Kurul;
+                        Yönetim Kurulunun 5 asıl ve 5 yedek üyesi ile Denetim Kurulunun 3 asıl ve 3 yedek üyesini ve
+                        Onur Kurulunun 3 asıl, 3 yedek üyesini gizli oy, açık sayım ile seçer.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="d.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Seçimlerde oy verme
+                        ve sayım
+                        işlemleri Divanın sorumluluğundadır. Divan, her sandık için üçer üyeden oluşan sayım ve gözetim
+                        komisyonu kurar. Sayım ve gözetim komisyonu, istekli üyeler arasında kur’a çekmek suretiyle
+                        oluşturulur.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="e.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Oylamanın ne şekilde
+                        yapılacağı
+                        genel kurulda öncelikle karara bağlanır. Açık oylama, kabul edenlerin ellerini kaldırması ve
+                        sayılarak tutanağa geçilmesi suretiyle yapılır. Sayıma itiraz edilmesi halinde oylama derhal
+                        aynı yöntemle tekrar edilir.</p>
+                </li>
+                <li data-list-text="f.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Gizli oylama
+                        yapılacak olması halinde, divan başkanı tarafından dernek mühür/ kaşesiyle oy pusulaları üyelere
+                        dağıtılır. Üyeler tarafından oy pusulalarına kimseye gösterilmeksizin kabul veya ret oyları
+                        yazılmak (kaşeleri basılmak) ve kapatılmak suretiyle boş bir kaba atılır.</p>
+                </li>
+                <li data-list-text="g.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                        Gizli oylama
+                        yapılması halinde oyların tasnifi herkese açık olarak divan kurulu tarafından yapılır ve sonuç
+                        tutanağa bağlanır.</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+                </li>
+                <li data-list-text="h.">
+                    <p
+                        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                        Talepte
+                        bulunulması halinde,
+                        kararlara muhalif kalan/itiraz eden üyelerin isimleri tutanağa yazılır.</p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ı. Genel Kurulun
+        bütün görüşme ve
+        kararları, Divan yazmanlarınca tutanağa geçirilir ve Divan üyelerinin tümü tarafından imzalanır. Seçim
+        tutanakları, seçimden sonra Divan tarafından imzalanarak Genel Kurulda ilan edilir.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–19 GENEL KURULUN GÖREV VE
+        YETKİLERİ</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Aşağıda yazılı
+        hususlar genel
+        kurulca görüşülüp karara bağlanır.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l16">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Dernek organlarının
+                seçilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Dernek tüzüğünün
+                değiştirilmesi,</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Yönetim
+                ve denetim
+                kurulları raporlarının görüşülmesi ve yönetim kurulunun ibrası,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ç. Yönetim kurulunca hazırlanan
+                bütçenin
+                görüşülüp aynen veya değiştirilerek kabul edilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek amaçları
+                doğrultusunda taşınır ve
+                taşınmaz mal satın almak veya satmak, kiralamak veya kiraya vermek, inşaat yaptırmak; taşınır ve
+                taşınmaz mallar üzerinde ayni hak tesis etmek, devretmek veya devralmak gibi iktisadi ve iltizami
+                hususlarda Yönetim Kuruluna yetki verilmesi,</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim
+                kurulunca
+                dernek çalışmaları ile ilgili olarak hazırlanacak yönetmelikleri inceleyip aynen veya değiştirilerek
+                onaylanması,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Dernek yönetim ve denetim
+                kurullarının
+                kamu görevlisi olmayan başkan ve üyelerine verilecek ücret ile her türlü</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ödenek, yolluk
+                ve
+                tazminatlar ile dernek hizmetleri için görevlendirilecek üyelere verilecek gündelik ve yolluk
+                miktarlarının tespit edilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Derneğin federasyona
+                katılması ve
+                ayrılmasının kararlaştırılması,</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ğ. Derneğin
+                uluslar arası
+                faaliyette bulunması, yurt dışındaki dernek ve kuruluşlara üye olarak katılması veya ayrılması,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="h.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Derneğin vakıf kurması,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ı. Üyeliğe kabul, üyeliğin
+                reddi veya
+                üyelikten çıkarma kararlarına karşı yapılan itirazların incelenmesi ve karara bağlanması,</p>
+        </li>
+        <li data-list-text="i.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Üyelik
+                şartlarına haiz
+                olup da Dernek kurulmadan önce vefat edenlerin birinci derece akrabalarına, üye olup olmadığına
+                bakılmaksızın yardım</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                sağlanması hususunda Yönetim
+                Kuruluna yetki
+                verilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="j.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: -7pt;text-align: left;">
+                Yönetim Kurulunun teklifi
+                üzerine giriş ve
+                yıllık üyelik aidat tutarının belirlenmesi,</p>
+        </li>
+        <li data-list-text="k.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Dernek
+                ambleminin
+                belirlenmesi ya da değiştirilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="l.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                İktisadi, ticari ve sanayi
+                işletmeler kurmak
+                ve işletmek ya da ortaklıklar kurmak hususunda Yönetim Kuruluna yetki verilmesi,</p>
+        </li>
+        <li data-list-text="m.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 18pt;text-indent: -12pt;text-align: left;">
+                Derneğin
+                bir şirkete
+                ortak olması halinde; şirketin yönetim kuruluna görevlendirilecek üyelerin seçilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="n.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Üyelerin ve ailelerinin sosyal
+                ihtiyaçlarını
+                karşılamak amacıyla sosyal tesisler açmak işletmek hususunda Yönetim Kuruluna yetki verilmesi,</p>
+        </li>
+        <li data-list-text="o.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Yurt
+                dışındaki dernek veya
+                kuruluşlara üye olmak ve bu kuruluşlarla ortak projeler yürütmek ve yardımlaşmak hususunda Yönetim
+                Kuruluna yetki verilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ö. Derneğin fesih edilmesi,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="p.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Yönetim kurulunun diğer
+                önerilerinin
+                incelenip karara bağlanması,</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        r. Mevzuatta genel
+        kurulca
+        yapılması belirtilen diğer görevlerin yerine getirilmesi, Genel kurul, derneğin diğer organlarını denetler ve
+        onları haklı sebeplerle her zaman görevden alabilir.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Genel kurul, üyeliğe kabul ve üyelikten
+        çıkarma
+        hakkında son kararı verir.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Derneğin en yetkili organı olarak
+        derneğin diğer bir
+        organına verilmemiş olan işleri görür ve yetkileri kullanır.</p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–20
+        YÖNETİM
+        KURULU</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l17">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Yönetim Kurulu, Genel Kurul
+                tarafından
+                seçilen 5 asıl ve 5 yedek üyeden oluşur. Derneğin yürütme ve temsil organıdır; bu görevini kanunlara ve
+                Dernek Tüzüğüne uygun olarak yerine getirir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Temsil görevi, Dernek
+                ba<span class="s1">ş</span>kan<span class="s1">ı</span>n<span class="s1">ı</span>nd<span
+                    class="s1">ı</span>r.
+            </p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–21 YÖNETİM KURULUNUN
+        TEŞKİLİ VE
+        ÇALIŞMA USULÜ
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l18">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim Kurulu, 5 asıl ve 5
+                yedek üyeden
+                oluşur. Dernek üyeleri arasından 2 yıl süreyle görev yapmak üzere Genel Kurul tarafından seçilir.
+                Seçimde en çok oy alan 10 kişiden ilk 5’i asıl üye, diğer 5’i yedek üye olur. Oyların eşitliği halinde
+                kur’a çekilir ve durum bir tutanakla tespit edilir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Yönetim
+                Kurulu,
+                seçimden sonraki ilk toplantısında görev bölümü</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                yapar; Başkan, Başkan
+                Yardımcısı, Genel
+                Sekreter, Sayman ve Üye seçerek bu</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                hususta karar alır. Ayrıca
+                Başkan tarafından
+                yedek üyelere de “fahri görevler” verilebilir.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Başkan,
+                Derneğin en
+                yetkili temsilcisidir. Başkan Yardımcısı, kendisine yönergeyle verilen görevleri ve Başkanın bulunmadığı
+                dönemlerde onun görevlerini yerine getirir. Genel Sekreter, Derneğin tüm yazışma ve idari işlemlerini
+                yürütür. Üye, Yönetim Kurulunca verilen yetkileri kullanmak suretiyle Dernek amaçları doğrultusunda özel
+                projelere</p>
+            <p class="lead"
+                style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;line-height: 200%;text-align: left;">ilişkin
+                kararları yerine getirir. Sayman Üye ise, Derneğin tüm mali işlemlerini yürütür. ç. Yönetim Kurulunun
+                çalışma esasları “Yönetim Kurulu Yönergesi”nde belirtilir.</p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim Kurulu, en az ayda
+                bir defa
+                Başkanın başkanlığında toplanır. Başkanın veya kurul üyelerinden üçünün isteği ile olağanüstü de
+                toplanabilir. Mazeretsiz olarak üst üste 3 kere veya yılda toplam 5 kere toplantıya katılmayan üyenin
+                yönetim kurulu üyeliği düşer. Yönetim Kurulu, toplantı ve karar yeter sayısı üçtür. Ancak maddi durumu
+                kötü olanlara yardım ve burs verilmesi, işlemleri için Yönetim Kurulu genel mevcudunun oy birliği ile
+                karar alınır. Üyeliğe kabul ve çıkarma işlemleri, yönetim kurulu üyelerinin tamamının katılımı ve gizli
+                oylama ile yapılır. Toplantı tutanakları, toplantıya katılanlar tarafından imzalanarak onaylanmış karar
+                defterine yazılır.</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim
+                Kurulu
+                üyeliğinin boşalması halinde, yedek üyeler öncelik sırasına göre davet edilir. Yönetim Kurulu üye tam
+                sayısının yarısının altına düştüğü takdirde, yeni üyelerin seçimi için, mevcut yönetim kurulu üyeleri
+                veya Denetleme Kurulu tarafından 1 ay içinde olağanüstü genel kurul çağrısı yapılır.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–22 YÖNETİM KURULUNUN GÖREV
+        VE
+        YETKİLERİ</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Yönetim kurulu
+        aşağıdaki hususları
+        yerine getirir.</p>
+    <ol id="l19">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Derneği temsil etmek veya
+                bu hususta
+                kendi üyelerinden bir veya birkaçına yetki vermek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Gelir ve gider
+                hesaplarına ilişkin
+                işlemleri yapmak ve gelecek döneme ait bütçeyi hazırlayarak genel kurula sunmak,</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Derneğin
+                çalışmaları
+                ile ilgili yönergeleri hazırlayarak genel kurul onayına sunmak</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ç. Genel kurulun verdiği yetki
+                ile taşınmaz
+                mal satın almak, derneğe ait taşınır ve taşınmaz malları satmak, bina veya tesis inşa ettirmek, kira
+                sözleşmesi yapmak, dernek lehine rehin ipotek veya ayni haklar tesis ettirmek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Gerekli görülen yerlerde
+                temsilcilik
+                açılmasını sağlamak</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Genel
+                kurul
+                toplantılarında gündemi oluşturarak üyelere göndermek</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: -8pt;text-align: justify;">
+                Genel kurulda alınan
+                kararları
+                uygulamak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Her faaliyet yılı sonunda
+                derneğin
+                işletme hesabı tablosu veya bilanço ve gelir tablosu ile yönetim kurulu çalışmalarını açıklayan raporunu
+                düzenlemek, toplandığında genel kurula sunmak,</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ğ. Bütçenin
+                uygulanmasını
+                sağlamak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="h.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Derneğe üye alınması veya
+                üyelikten
+                çıkarılma hususlarında karar vermek.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ı. Derneğin
+                idari personel
+                kadrosunu belirleyerek atama yapmak, personelin görev yerini değiştirmek veya görevine son vermek,
+                gerektiğinde hizmet alımı yapmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="i.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin demirbaş, muhasebe,
+                yazışma ve
+                sair kayıtlarının mevzuata uygun ve düzenli tutulmasını ve işletilmesini sağlamak,</p>
+        </li>
+        <li data-list-text="j.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 13pt;text-indent: -7pt;text-align: justify;">
+                Giriş ve
+                yıllık üyelik
+                aidat tutarını belirleyerek Genel Kurulun onayına sunmak,</p>
+        </li>
+        <li data-list-text="k.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Derneğin
+                amaç ve
+                faaliyetlerine yönelik kaynak sağlayıcı projeler hazırlamak ve yürütmek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="l.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: -7pt;text-align: justify;">
+                Her türlü şartlı bağışları
+                ve
+                vasiyetleri inceleyerek gereğine karar vermek,</p>
+        </li>
+        <li data-list-text="m.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 18pt;text-indent: -12pt;text-align: justify;">
+                Derneğin amacını
+                gerçekleştirmek için
+                mevzuata uygun her çeşit kararı almak ve uygulamak,</p>
+        </li>
+        <li data-list-text="n.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Mevzuatın kendisine
+                verdiği diğer görevleri yapmak ve yetkileri kullanmak,</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–23 DENETİM KURULU, TEŞKİLİ
+        VE
+        ÇALIŞMA USULÜ
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l20">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Denetim Kurulu, Dernek içi
+                denetim
+                görevini yerine getirmekle görevli olup, 3 asıl, 3 yedek üyeden oluşur. Dernek üyeleri arasından 2 yıl
+                süreyle görev yapmak üzere Genel Kurul tarafından seçilir. Seçimde en çok oy alan 6 kişiden ilk 3’ü asıl
+                üye, diğer 3’ü yedek üye olur. Oyların eşitliği halinde kur’a çekilir ve durum bir tutanakla tespit
+                edilir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 16pt;text-indent: -10pt;line-height: 11pt;text-align: justify;">
+                Denetim
+                kurulu asıl
+                üyeliğinde istifa veya başka sebeplerden dolayı boşalma olduğu taktirde genel kurulda aldığı oy</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                çokluğu
+                sırasına göre yedek
+                üyelerin göreve çağrılması mecburidir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Denetim Kurulu ilk
+                toplantısında, kendi
+                aralarından bir Başkan, bir İdari Denetimci ve bir Mali Denetimci seçer ve Yönetim Kuruluna bildirir.
+            </p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 13pt;text-indent: -7pt;text-align: left;">
+                Denetim
+                Kurulunun
+                çalışma esasları “Denetim Kurulu Yönergesi”nde düzenlenir.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        ç. Denetim Kurulu, Başkanının
+        hazırlayacağı
+        takvime göre en az 6 ayda bir toplanır. Başkanın veya kurul üyelerinden ikisinin isteği ile olağanüstü de
+        toplanabilir. Mazeretsiz olarak üst üste 2 kere toplantıya ya da denetim faaliyetine katılmayan üyenin denetim
+        kurulu üyeliği düşer. Denetim Kurulu, üye tam sayısının salt çoğunluğu ile karar alır. Toplantı tutanakları,
+        toplantıya katılanlar tarafından imzalanarak onaylanmış karar defterine yazılır.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt; text-indent: 0pt;text-align: justify;">
+        MADDE–24 DENETİM KURULUNUN
+        GÖREV VE
+        YETKİLERİ
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l21">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Derneğin Tüzükte
+                belirtilen amaçları
+                doğrultusunda ve faaliyet alanları kapsamında çalışıp çalışmadığını denetlemek,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin demirbaş, muhasebe,
+                yazışma ve
+                sair kayıtlarının mevzuata uygun ve düzenli tutulup tutulmadığını denetlemek,</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim
+                Kurulu
+                tarafından gerçekleştirilen çalışmaları; işlevlerin etkinliği ve verimliliği, mali raporlama sisteminin
+                güvenilirliği, kanun ve düzenlemelere uygunluk açısından denetlemek,</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ç. Yılda
+                en az iki kere
+                olmak üzere, belirsiz zamanlarda Derneğin bütün hesaplarını, mali durumunu ve diğer işlemlerini
+                denetlemek ve denetim raporu tanzim ederek Yönetim Kuruluna ve toplandığında Genel Kurula sunmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Denetim esnasında
+                soruşturmayı gerektiren
+                bir hususun tespit edilmesi halinde konunun açıklandığı bir tutanak tanzim ederek gereği için Yönetim
+                Kurulu Başkanına yazılı olarak göndermek,</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Gerektiğinde bağımsız
+                denetim kuruluşlarına denetim yaptırmak,</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 13pt;text-indent: -8pt;text-align: justify;">
+                Denetim Kurulu Yönergesini
+                ve
+                gerektiğinde değişikliklerini hazırlayarak Genel Kurulun onayına sunmak</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Gerektiğinde Genel Kurulu
+                olağanüstü
+                toplantıya çağırmaktır.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        MADDE–25 ONUR KURULU</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l22">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel Kurulca seçilen 3 asıl
+                ve 3 yedek
+                üyeden oluşur. Dernek üyeleri arasından 2 yıl süreyle görev yapmak üzere Genel Kurul tarafından seçilir.
+                Seçimde en çok oy alan 6 kişiden ilk 3’ü asıl üye, diğer 3’ü yedek üye olur. Oyların eşitliği halinde
+                kur’a çekilir ve durum bir tutanakla tespit edilir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Onur
+                Kurulu ilk
+                toplantısında, kendi aralarından bir başkan seçer ve Yönetim Kuruluna bildirir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Onur Kurulunun çalışma
+                esasları “Onur
+                Kurulu Yönergesi”nde düzenlenir. Onur Kurulu, yönergeyi ve gerektiğinde değişikliklerini hazırlayarak
+                genel Kurulun onayına sunar.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                ç. Sosyal
+                ve ahlaki
+                seviyesi ile yaşantısı Dernek amaç ve ilkeleriyle bağdaşmayanlar, Dernek Tüzüğüne ve Dernek organlarının
+                kararlarına uymayanlar, Derneğe ve üyelere karşı suç işleyenler veya üyelerin şeref ve haysiyetlerini
+                zedeleyen davranışlarda bulunanlar, derneğin kuruluş amaçlarına aykırı hareketlerde bulunanlar, derneğin
+                toplum içerisindeki itibarını ve saygınlığını zedeleyecek söz ve davranışlarda bulunanlar; üyelerin
+                yazılı başvurusu üzerine ya da resen, Yönetim Kurulu tarafından Onur Kuruluna sevk edilirler.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Yönetim Kurulunun talebi
+                üzerine toplanan
+                Onur Kurulu,</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                incelemesini dosya üzerinden
+                yapar. Şikâyet
+                ve sevk gerekçelerini inceler, ilgiliye yazılı savunmasını sunması için 15 gün süre verir. İncelemeyi en
+                geç 3 ay içinde tamamlar.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Şikâyet konusu olayın vaki olup
+                olmadığı,
+                oluş şekli, özellikleri, ağırlığı, doğurduğu ve doğuracağı zarar ile Tüzük ve sair mevzuatı dikkate
+                almak suretiyle karar verir. Sonucu Yönetim Kuruluna yazılı ve gerekçeli olarak bildirir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Onur Kurulu, inceleme
+                sonucunda; yaptırım
+                uygulanmasına gerek bulunmadığını, ilgilinin yazılı olarak uyarılmasını veya Dernek üyeliğinden
+                çıkarılmasını Yönetim Kuruluna yazılı olarak teklif eder.</p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Onur Kurulu;
+                yaptırım
+                uygulanmasına gerek bulunmadığına ve ilgilinin yazılı olarak uyarılmasına dair teklifini oyçokluğu ile
+                yapar. Dernek üyeliğinden çıkarılma teklifini ise oybirliği ile yapar.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="g.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Toplantı tutanakları ve
+                kararlar, üyeler
+                tarafından imzalanarak onur kurulu defterine yazılır.</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ğ. Mazeretsiz olarak
+        toplantıya
+        katılmayan üyenin onur kurulu üyeliği düşer. Onur Kurulu üyeliğinin boşalması halinde, yedek üyeler öncelik
+        sırasına göre davet edilir.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–26 DANIŞMA KOMİSYONU</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l23">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Dernek; Yönetim, Denetim, Onur
+                Kurullarında
+                asıl üye olarak görev yapmış üyeler ile il temsilcisi görevlerini yerine getirmiş olanlar (görev almak
+                istemeyenler hariç olmak üzere) Danışma Komisyonunun doğal üyesidir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Danışma Komisyonu listesi
+                Yönetim Kurulunca
+                seçimden sonra bir ay içerisinde hazırlanır, Genel Kurul üyelerine duyurulur.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Danışma Komisyonu
+                kesinleştikten sonra bir
+                başkan ve yeterince başkan yardımcısı belirler, Yönetim Kuruluna bildirir.</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ç. Danışma Komisyonu Yönetim, Denetim,
+        Onur
+        Kurulunun görüş istediği konular ile üyelerin bireysel talep ve isteklerine dair incelemeleri yapar, görüş
+        oluşturur, rapor hazırlar ve bu çalışmalarını ilgili kurullara bildirir.</p>
+    <h1
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 32pt;text-indent: 0pt;text-align: left;">
+        Madde 27-Temsilcilik Açma</h1>
+    <p class="s2" style="padding-top: 12pt;padding-left: 5pt;text-indent: 27pt;text-align: justify;">Dernek, gerekli
+        gördüğü yerlerde dernek faaliyetlerini yürütmek amacıyla yönetim kurulu kararıyla temsilcilik açabilir.
+        Temsilciliğin adresi, yönetim kurulu kararıyla temsilci olarak görevlendirilen kişi veya kişiler tarafından o
+        yerin mülkî idare amirliğine yazılı olarak bildirilir. Temsilcilik, dernek genel kurulunda temsil edilmez.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 12pt;text-indent: 0pt;text-align: left;">
+        <br />
+    </p>
+    <h1
+        style="font-size:larger;font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 32pt;text-indent: 0pt;text-align: left;">
+        Madde 28-Derneğin İç Denetimi</h1>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 4pt;text-indent: 0pt;text-align: left;">
+        <br />
+    </p>
+    <p class="s2" style="padding-left: 5pt;text-indent: 22pt;line-height: 114%;text-align: justify;">Dernekte genel
+        kurul, yönetim kurulu veya denetim kurulu tarafından iç denetim yapılabileceği gibi, bağımsız denetim
+        kuruluşlarına da denetim yaptırılabilir. Genel kurul, yönetim kurulu veya bağımsız denetim kuruluşlarınca
+        denetim yapılmış olması, denetim kurulunun yükümlülüğünü ortadan kaldırmaz.</p>
+    <p class="s2" style="padding-left: 5pt;text-indent: 27pt;text-align: justify;">Denetim kurulu tarafından en geç
+        yılda bir defa derneğin denetimi gerçekleştirilir. Genel kurul veya yönetim kurulu, gerek görülen hallerde
+        denetim yapabilir veya bağımsız denetim kuruluşlarına denetim yaptırabilir.</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 6pt;text-indent: 0pt;text-align: left;">
+        <br />
+    </p>
+    <h1
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 32pt;text-indent: 0pt;text-align: justify;">
+        Madde 29-Derneğin Borçlanma Usulleri</h1>
+    <p class="s2" style="padding-top: 6pt;padding-left: 5pt;text-indent: 27pt;text-align: justify;">Dernek amacını
+        gerçekleştirmek ve faaliyetlerini yürütebilmek için ihtiyaç duyulması halinde yönetim kurulu kararı ile
+        borçlanma yapabilir. Bu borçlanma kredili mal ve hizmet alımı konularında olabileceği gibi nakit olarak ta
+        yapılabilir. Ancak bu borçlanma, derneğin gelir kaynakları ile karşılanamayacak miktarlarda ve derneği ödeme
+        güçlüğüne düşürecek nitelikte yapılamaz.</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; text-indent: 0p t;text-align: center;">
+        DÖRDÜNCÜ BÖLÜM</h2>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-top: 3pt; padding-left: 5pt; text-indent: 0pt; line-height: 200%; text-align: left;">
+        MAL
+        VARLIĞI VE
+        MALİ HÜKÜMLER MADDE–30 DERNEĞİN MALVARLIĞI</h2>
+    <ol id="l24">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;line-height: 11pt;text-align: left;">
+                Dernek
+                Tüzüğüne göre
+                temin edilen her türlü gelir ve ekonomik değerler ile haklar Derneğin malvarlığını teşkil eder.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: left;">
+                Derneğin üçüncü şahıslarla
+                olan
+                ilişkilerinden doğacak sorumluluklar Derneğin tüzel kişiliğine aittir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: left;">
+                Üyeler; Dernek mallarının
+                nemalandırılması
+                amacı ile yapılan işlemlerin sonucundan şahsen sorumlu değildir.</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ç. Dernek
+                üyelerinin
+                Derneğin malları ve varlığı üzerinde şahsi hakları yoktur. Bu nedenle üyelerin şahsi borçlarından dolayı
+                Dernek sorumlu tutulamaz ve Dernek mallarına da başvurulamaz.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin paraları
+                Türkiye’deki çoğunluk
+                sermayesi milli olan bankalarda Dernek adına açılacak hesaplarda nemalandırılır. Yönetim Kurulu; banka
+                hesabından şifre alma, şifre değiştirme, para çekme, EFT, havale yapmak, hesap açmak, kapatmak ve
+                İnternet bankacılığı işlemleri için yönetim kurulu üyelerinden uygun gördüğü kişilere yetki tanımlar,
+                sınırlamalar koyar, derneğin parasını kontrol edecek tedbirleri alır. Sabit giderler için otomatik ödeme
+                talimatı verilebilir ya da internet bankacılığı imkânlarından istifade edilebilir. Banka hesabının aylık
+                hesap hareketlerini içeren ve banka tarafından düzenlenen belge, muhasebe kayıtları ile birlikte
+                muhafaza edilir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin bütün harcamaları
+                Yönetim Kurulu
+                kararına dayalı olarak yapılır. Acil durumlarda Yönetim Kurulu Başkanı tarafından harcama kararı
+                verilebilir. Bu şekilde yapılabilecek harcamanın üst limiti Yönetim Kurulu tarafından tespit edilir.</p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek
+                kasasında
+                Yönetim Kurulu tarafından belirlenecek tutar kadar nakit para bulundurulabilir. Bu tutar hiçbir zaman
+                Derneğin 30 günlük mutat harcamasından fazla olamaz.</p>
+        </li>
+    </ol>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–31
+        DERNEĞİN
+        GELİRLERİ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        Derneğin gelir kaynakları aşağıda
+        sayılmıştır.</p>
+    <ol id="l25">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Üye Aidatı: Üyelerden giriş
+                ödentisi
+                olarak 500,00 TL ve yıllık olarak ta 600 TL yıllık aidat miktarı alınır. Bu miktarları artırmaya veya
+                eksiltmeye Genel Kurul yetkilidir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Gerçek
+                ve tüzel
+                kişilerin kendi isteği ile derneğe yaptıkları bağış ve yardımlar.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Dernek tarafından
+                tertiplenen çay ve
+                yemekli toplantı, gezi ve</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;line-height: 200%;text-align: left;">
+                eğlence,
+                temsil, konser ve
+                konferans gibi faaliyetlerden sağlanan gelirler, ç. Derneğin mal varlığından elde edilen gelirler,</p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;line-height: 11pt;text-align: justify;">
+                Yardım
+                toplama
+                hakkındaki mevzuat hükümlerine uygun olarak toplanacak bağış ve yardımlar.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                Derneğin, amacını
+                gerçekleştirmek için
+                ihtiyaç duyduğu geliri temin etmek amacıyla giriştiği ticari faaliyetlerden elde edilen kazançlar.</p>
+        </li>
+        <li data-list-text="f.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 13pt;text-indent: -8pt;text-align: justify;">
+                Diğer
+                gelirler.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-32 ÜYELİK AİDATI VE GİRİŞ
+        ÖDENTİSİ
+    </h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l26">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek üyeleri bir defaya
+                mahsus olmak
+                üzere giriş ödentisi ile her yıl aidat öderler. Giriş ödentisi ve yıllık aidatlar, işbaşında bulunan
+                yönetim kurulunun sunacağı ve Genel Kurulun onaylayacağı proje doğrultusunda Genel Kurul tarafından
+                belirlenir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel
+                Kurulun karar
+                vermesi halinde, dernek organlarında görev yapmakta olan üyeler, görevleri süresince üyelik aidatı
+                ödemezler. Dernek tarafından yapılan satın almalar, ücret karşılığı verilen hizmetler ve ticari
+                faaliyetler nedeniyle yapılması gerekli ödemeler saklıdır.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Mevcut
+                üyeler, yıllık
+                aidatı her yılın Ocak ayında peşin olarak veya Ocak ve Temmuz ayları arasında olmak üzere iki taksit
+                halinde öderler. Ancak Genel Kurulun yapılacağı tarihlere kadar üyelik aidatlarının ödenmesi zorunludur.
+            </p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                ç. Derneğe üye
+                olmak için
+                Genel Kuruldan’dan sonra başvuranlar giriş ödentisini tam, üyelik müracaat yılına aidatını yarım
+                öderler.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -10pt;text-align: justify;">
+                Üyelik aidatı bir önceki
+                yıldan aşağı
+                miktarda tespit edilmez.</p>
+        </li>
+    </ol>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;text-indent: 0pt;text-align: left;">
+        MADDE–33 ÜCRET, ÖDENEK, YOLLUK
+        VE
+        TAZMİNATLAR</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l27">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim Kurulu ve Denetim
+                Kurulunun kamu
+                görevlisi olmayan başkan ve üyelerine ücret verilebilir. Verilecek ücret ile ödenek, yolluk ve
+                tazminatlar ve ödeme esasları Genel Kurul tarafından tespit edilir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Yönetim
+                Kurulu ve
+                Denetim Kurulu üyeleri dışındaki üyelere ücret, huzur hakkı veya başka bir ad altında herhangi bir
+                karşılık ödenemez.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernek hizmetleri için
+                görevlendirilecek
+                üyelere verilecek gündelik ve yolluk miktarları Genel Kurul tarafından belirlenir.</p>
+        </li>
+    </ol>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;text-indent: 0pt;text-align: center;">
+        BEŞİNCİ BÖLÜM</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ÇEŞİTLİ HÜKÜMLER</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;line-height: 11pt;text-align: left;">
+        MADDE–34 DEFTER
+        TUTMA
+        ESASLARI
+    </h2>
+    <ol id="l28">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Dernekte, işletme hesabı
+                esasına göre
+                defter tutulur. Ancak, yıllık brüt gelirin Dernekler Yönetmeliğinin 31. Maddesinde belirtilen haddi
+                aşması durumunda takip eden hesap döneminden başlayarak bilanço esasına göre defter tutulur.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Bilanço esasına geçilmesi
+                durumunda, üst
+                üste iki hesap döneminde yukarıda belirtilen haddin altına düşülürse, takip eden yıldan itibaren işletme
+                hesabı esasına dönülebilir.</p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Yukarıda
+                belirtilen
+                hadde bağlı kalmaksızın yönetim kurulu kararı ile bilanço esasına göre defter tutulabilir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="d.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin ticari işletmesi
+                açılması
+                durumunda, bu ticari işletme için, ayrıca Vergi Usul Kanunu hükümlerine göre defter tutulur.</p>
+        </li>
+        <li data-list-text="e.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Kayıt
+                Usulü: Derneğin
+                defter ve kayıtları Dernekler Yönetmeliğinde belirtilen usul ve esasa uygun olarak tutulur.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-35 DERNEĞİN FESHİ VE MAL
+        VARLIĞININ TASFİYE
+        ŞEKLİ</h2>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l29">
+        <li data-list-text="a.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 15pt;text-indent: -9pt;text-align: justify;">
+                Genel kurul, her zaman
+                derneğin feshine
+                karar verebilir.</p>
+        </li>
+        <li data-list-text="b.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel
+                kurulda fesih
+                konusunun görüşülebilmesi için genel kurula katılma hakkı bulunan üyelerin 2/3 çoğunluğu aranır.
+                Çoğunluğun sağlanamaması sebebiyle toplantının ertelenmesi durumunda ikinci toplantıda çoğunluk aranmaz.
+                Ancak, bu toplantıya katılan üye sayısı, yönetim ve denetim kurulları üye tam sayısının iki katından az
+                olamaz.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="c.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Fesih kararının alınabilmesi
+                için gerekli
+                olan karar çoğunluğu toplantıya katılan ve oy kullanma hakkı bulunan üyelerin oylarının 2/3’ü’dür. Genel
+                kurulda fesih kararı oylaması açık olarak yapılır.</p>
+        </li>
+    </ol>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        ç. Tasfiye İşlemleri
+    </p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <ol id="l30">
+        <li data-list-text="(1)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Genel kurulca fesih kararı
+                verildiğinde,
+                derneğin para, mal ve haklarının tasfiyesi son yönetim kurulu üyelerinden oluşan tasfiye kurulunca
+                yapılır. Bu işlemlere, feshe ilişkin genel kurul kararının alındığı veya kendiliğinden sona erme halinin
+                kesinleştiği tarihten itibaren başlanır. Tasfiye süresi içinde bütün işlemlerde dernek adında “Tasfiye
+                Halinde 1990 Sınıf Okulu Mezunları Yardımlaşma ve Dayanışma Derneği” ibaresi kullanılır.</p>
+        </li>
+        <li data-list-text="(2)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Tasfiye
+                kurulu,
+                mevzuata uygun olarak derneğin para, mal ve haklarının tasfiyesi işlemlerini baştan sonuna kadar
+                tamamlamakla görevli ve yetkilidir. Bu kurul, önce derneğin hesaplarını inceler. İnceleme esnasında
+                derneğe ait defterler, alındı belgeleri, harcama belgeleri, tapu ve banka kayıtları ile diğer
+                belgelerinin tespiti yapılarak varlık ve yükümlülükleri bir tutanağa bağlanır. Tasfiye işlemeleri
+                sırasında derneğin alacaklılarına çağrıda bulunulur ve varsa malları paraya çevrilerek alacaklılara
+                ödenir. Derneğin alacaklı olması durumunda alacaklar tahsil edilir. Alacakların tahsil edilmesi ve
+                borçların ödenmesinden sonra kalan tüm para, mal ve hakları, genel kurulda belirlenen yere</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                devredilir.
+                Genel kurulda,
+                devredilecek yer belirlenmemişse derneğin</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+                bulunduğu ildeki amacına en
+                yakın ve fesih
+                edildiği tarihte en fazla üyeye sahip derneğe devredilir.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(3)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Tasfiyeye ilişkin tüm
+                işlemler tasfiye
+                tutanağında gösterilir ve tasfiye işlemleri, mülki idare amirliklerince haklı bir nedene dayanılarak
+                verilen ek süreler hariç üç ay içinde tamamlanır.</p>
+        </li>
+        <li data-list-text="(4)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 19pt;text-indent: -14pt;text-align: justify;">
+                Derneğin para, mal
+                ve haklarının tasfiye ve intikal</p>
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                işlemlerinin tamamlanmasını
+                müteakip
+                tasfiye kurulu tarafından durumun yedi gün içinde bir yazı ile dernek merkezinin bulunduğu yerin mülki
+                idare amirliğine bildirilmesi ve bu yazıya tasfiye tutanağının da eklenmesi zorunludur.</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="(5)">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+                Derneğin defter ve
+                belgelerini tasfiye
+                kurulu sıfatıyla son yönetim kurulu üyeleri saklamakla görevlidir. Bu görev, bir yönetim kurulu üyesine
+                de verilebilir. Bu defter ve belgelerin saklanma süresi beş yıldır.</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <h2
+        style="font-family: 'Lato', sans-serif; color: #555; line-height: 1.8; font-size:larger; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE–36 GİZLİLİK</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Dernek organlarında görev yapan
+        üyeler ve Dernek
+        personeli; görevlerini</p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        yaparken, üyeler ve aileleri
+        hakkında edindikleri
+        özel bilgileri amacı dışında kullanamaz ve paylaşamaz.</p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        MADDE-37 HÜKÜM
+        EKSİKLİĞİ</h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        Bu tüzükte belirtilmemiş hususlarda
+        Dernekler
+        Kanunu, Türk Medeni Kanunu ve bu Kanunlara atfen çıkartılmış olan Dernekler Yönetmeliği ve ilgili diğer
+        mevzuatın dernekler hakkındaki hükümleri uygulanır.</p>
+    <h2
+        style="color: #555; line-height: 1.8; font-size:larger; padding-top: 11pt;padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        GEÇİCİ MADDE-1
+    </h2>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: left;">
+        İlk genel kurulda dernek organları oluşturulana kadar, derneği temsil edecek ve dernekle ilgili iş ve
+        işlemleri
+        yürütecek olan geçici yönetim kurulu üyeleri aşağıda belirtilmiştir. Geçici Yönetim Kurulu Üyelerinin;</p>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1; font-weight: 400; padding-left: 5pt;text-indent: 0pt;text-align: justify;">
+        S.No Adı ve Soyadı : Görev Unvanı :
+        İmza :</p>
+    <ol id="l31">
+        <li data-list-text="1.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 41pt;text-indent: -35pt;text-align: justify;">
+                Bülent
+                Çakmak Başkan
+            </p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="2.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 41pt;text-indent: -35pt;text-align: justify;">
+                Murat Ballı Başkan
+                Yardımcısı</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="3.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 40pt;text-indent: -35pt;text-align: justify;">
+                Rıfat Köse Genel Sekreter
+            </p>
+        </li>
+        <li data-list-text="4.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 38pt;text-indent: -32pt;text-align: justify;">
+                Kazım
+                Tetik Sayman
+            </p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="5.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 38pt;text-indent: -32pt;text-align: justify;">
+                Bayram Kaşıkcı Üye</p>
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
+        </li>
+        <li data-list-text="6.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-left: 38pt;text-indent: -32pt;text-align: justify;">
+                Mesut Tarhan Üye</p>
+        </li>
+        <li data-list-text="7.">
+            <p
+                style="font-size: 1rem; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: 400; padding-top: 11pt;padding-left: 38pt;text-indent: -32pt;text-align: justify;">
+                Namık
+                Geyik Üye</p>
+        </li>
+    </ol>
+    <p style="text-indent: 0pt;text-align: left;"><br /></p>
+    <p
+        style="font-size: large; font-family: 'Lato', sans-serif; color: #555; margin-bottom: 30px; line-height: 1.8; font-weight: bolder; padding-left: 5pt; text-indent: 0pt; text-align: center;">
+        BU TÜZÜK 37 (OTUZYEDİ) MADDE VE 1 (BİR) GEÇİCİ MADDEDEN İBARETTİR.</p>
+</div>
