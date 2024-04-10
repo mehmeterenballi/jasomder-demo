@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <!-- <a href="index.html" class="logo">jasomder <em> studio</em></a> -->
+                <img src="assets/images/Logo/logo.jpg" width="90" style="padding-top: 10px;" />
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="services.html">Şehitlerimiz</a></li>
+                    <!-- <li><a href="board-of-management.html">Dernek Yönetim Kurulu</a></li>
+                    <li><a href="dernek-tuzugu.html">Dernek Tüzüğü</a></li> -->
+                    <!-- <li><a href="menu.html">Menu</a></li> -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                            aria-expanded="false">Kurumsal</a>
+
+                        <div class="dropdown-menu">
+                            <!-- <a class="dropdown-item" href="about.html">Hakkımızda</a> -->
+                            <a class="dropdown-item" href="board-of-management.html">Dernek Yönetim Kurulu</a>
+                            <a class="dropdown-item" href="dernek-tuzugu.html">Dernek Tüzüğü</a>
+                            <a class="dropdown-item" href="uyelik-muracaati.html">Üyelik Müracaatı</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">İletİşİm</a></li>
+                </ul>
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    let arr = window.location.href.split("/");
+
+    let endoflink = arr[arr.length - 1];
+    let url = "index.html"
+    if (endoflink.substr(endoflink.length - 5, endoflink.length - 1)) {
+        console.log(endoflink.substr(endoflink.length - 5, endoflink.length - 1))
+        url = arr[arr.length - 1];
+        console.log(url)
+    }
+
+    if (url.length > 6) {
+        url = "#" + url.substr(0, url.length - 5);
+        console.log(url)
+    }
+
+    if (url == "#blog-details")
+        $("#blog" + " .nav-link").addClass("active");
+
+    if (url == "#job-details")
+        $("#job-details" + " .nav-link").addClass("active");
+
+    $(url + " .nav-link").addClass("active");
+</script>
