@@ -53,37 +53,11 @@
   </style>
 
     <!-- ***** Header Area Start ***** -->
-    <header id="navbar-container" class="header-area header-sticky bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/Logo/logo.jpg" class="logo" width="90" style="padding-top: 10px;" />
-                        </a>
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                            <li><a href="sehitlerimiz.html">Şehitlerimiz</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Kurumsal</a>
-
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="board-of-management.html">Dernek Yönetim Kurulu</a>
-                                    <a class="dropdown-item" href="dernek-tuzugu.html">Dernek Tüzüğü</a>
-                                    <a class="dropdown-item" href="uyelik-muracaati.html">Üyelik Müracaatı</a>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">İletİşİm</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <header id="navbar-container" class="header-area header-sticky">
     </header>
+    <script>
+        $(document).ready(function () { $("#navbar-container").load("./navbar.html"); });
+    </script>
     <!-- ***** Header Area End ***** -->
 
   <section class="section section-bg" id="call-to-action"

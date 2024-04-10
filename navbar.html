@@ -1,32 +1,46 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <nav class="main-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/Logo/logo.jpg" class="logo" width="90" style="padding-top: 10px;" />
-                </a>
-                <ul class="nav">
-                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                    <li><a href="sehitlerimiz.html">Şehitlerimiz</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                            aria-expanded="false">Kurumsal</a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand align-text-bottom" href="./">
+            <img src="assets/images/Logo/logo.jpg" alt="JASOMDER" height="55">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="index.html">Ana Sayfa
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
 
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="board-of-management.html">Dernek Yönetim Kurulu</a>
-                            <a class="dropdown-item" href="dernek-tuzugu.html">Dernek Tüzüğü</a>
-                            <a class="dropdown-item" href="uyelik-muracaati.html">Üyelik Müracaatı</a>
+                    <li class="nav-item dropdown" id="about-us-dropdown">
+                        <a id="corporate" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Kurumsal</a>
+
+                        <div class="dropdown-menu bg-white" style="padding: .5rem 0; margin: .125rem 0 0;">
+                            <!-- <a class="dropdown-item nav-dd-item" href="team.html">Takımımız</a> -->
+                            <a id="about-us" class="dropdown-item nav-dd-item text-dark pt-3"
+                                href="board-of-management.html">Dernek Yönetim Kurulu</a>
+                            <!-- <a id="testimonials" class="dropdown-item nav-dd-item" href="testimonials.html"
+                                data-translation-key="4">Referanslar</a> -->
+                            <hr>
+                            <a id="terms" class="dropdown-item nav-dd-item text-dark" href="dernek-tuzugu.html">Dernek
+                                Tüzüğü</a>
+                            <hr>
+                            <a id="terms" class="dropdown-item nav-dd-item text-dark pb-2"
+                                href="uyelik-muracaati.html">Üyelik Müracaatı</a>
                         </div>
                     </li>
-                    <li><a href="contact.html">İletİşİm</a></li>
+                    <li class="nav-item"><a id="contact" class="nav-link localizableText" href="contact.html"
+                            data-translation-key="9">İletişim</a></li>
                 </ul>
-                <a class='menu-trigger'>
-                    <span>Menu</span>
-                </a>
-            </nav>
+            </div>
         </div>
     </div>
-</div>
+</nav>
 
 <script>
     let arr = window.location.href.split("/");
