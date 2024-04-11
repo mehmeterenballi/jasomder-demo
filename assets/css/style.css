@@ -315,9 +315,9 @@ body {
   color: #fff;
 }
 
-#team .member .social a:hover {
+/* #team .member .social a:hover {
   color: #007bff;
-}
+} */
 
 #team .member .social i {
   font-size: 18px;
@@ -1627,9 +1627,9 @@ responsive
   justify-content: center;
 }
 
-a {
+/* a {
   color: #ed563b;
-}
+} */
 
 a:focus,
 a:hover {
@@ -1654,7 +1654,7 @@ a:hover {
 
 .nav-dd-item {
   white-space: normal;
-  max-height: 3.5em;
+  max-height: 4.5em;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1758,7 +1758,7 @@ header .navbar {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #fff;
+  /* color: #fff; */
   transition: all 0.5s;
   margin-top: 5px;
 }
@@ -1768,9 +1768,9 @@ header .navbar {
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show>.nav-link {
-  color: #fff;
-  padding-bottom: 25px;
-  border-bottom: 3px solid #f33f3f;
+  /* color: #fff; */
+  /* padding-bottom: 25px; */
+  /* border-bottom: 3px solid #f33f3f; */
 }
 
 .navbar .navbar-toggler-icon {
